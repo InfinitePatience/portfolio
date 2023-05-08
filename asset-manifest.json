@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kakao_react_2023/static/css/main.ef8c6e10.css",
+    "main.js": "/kakao_react_2023/static/js/main.a64d726a.js",
+    "index.html": "/kakao_react_2023/index.html",
+    "main.ef8c6e10.css.map": "/kakao_react_2023/static/css/main.ef8c6e10.css.map",
+    "main.a64d726a.js.map": "/kakao_react_2023/static/js/main.a64d726a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef8c6e10.css",
+    "static/js/main.a64d726a.js"
+  ]
+}
