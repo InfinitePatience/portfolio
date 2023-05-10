@@ -1,14 +1,12 @@
 import React from 'react'
-import '../styles/Project.scss';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-function Project() {
-
+function Samsung() {
   return (
     <>
     <div className='project_container'>
     <div className='logo'>
-        <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Link to="/"><img src={require("../images/portfolio_logo_white.png")} alt="" /></Link>
     </div>
       <div className='project_animation'></div>
       <div className='project_moveproject'></div>
@@ -39,4 +37,4 @@ function Project() {
   )
 }
 
-export default Project
+export default Samsung
