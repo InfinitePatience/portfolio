@@ -1,0 +1,33 @@
+.contact_container {
+  width:90vw;
+  margin:10.417vw auto;
+  border:1px solid yellow;
+
+  .contact_title {
+    width:inherit;
+    margin-bottom:2.6vw;
+  b {
+    font-size:7vw;
+    font-family:'regular';
+    font-weight:600;
+    color:#fff;
+  }
+  }
+
+  .contact_txt {
+    width:inherit;
+    text-align:center;
+    span {
+      font-size:5vw;
+      font-family:'Montserrat', sans-serif;
+      font-weight:500;
+      color:#f9f9f9;
+    }
+  }
+
+  .address {
+    div > span {
+      font-size:30px;
+    }
+  }
+}
