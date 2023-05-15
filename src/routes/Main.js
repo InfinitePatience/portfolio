@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import '../styles/Main.scss';
 import { Link } from 'react-router-dom';
 import Contact from '../component/Contact';
@@ -6,7 +6,7 @@ import Introduction from '../component/Introduction';
 import Menu from '../component/Menu';
 
 function Main() {
- 
+
 
   return (
     <>
@@ -22,10 +22,9 @@ function Main() {
         <div className='main_title'>
           <div>
             <h1>BY SEUNG JU LEE.<br />WELCOME TO<br />MY SITE.</h1>
-            {/* <h1>지금 너를 봐. 당신은 지금 포트폴리오와 사랑에 빠져버렸어. </h1> */}
           </div>
         </div>
-          <div className='main_contact_shortcuts' >
+          <div className='main_contact_shortcuts'>
             <button><span><img src={require("../images/contact_button-01.png")} alt="contact_image"/></span></button>
             <span>SHORT <br />CUTS</span>
           </div>
@@ -42,7 +41,7 @@ function Main() {
             </Link>
           </div>
 
-          <div className='index'>
+          <div className='index card2'>
             <Link to="/Samsung" className='project2'>
               <ul>
                 <li>02</li>

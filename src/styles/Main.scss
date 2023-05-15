@@ -6,6 +6,9 @@ $projectcolor4:#83ffb3;
 $projectcolor5:#83c7FF;
 $projectcolor6:#c783FF;
 
+body {
+  perspective: 1000px;
+}
 
 .main_logo {
   // border:1px solid red;
@@ -107,6 +110,9 @@ $projectcolor6:#c783FF;
   width:23.22vw;
   height:29.84vw;
   position:relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: all .3s ease;
   a {
     display:block;
     position:absolute;
@@ -218,7 +224,7 @@ $projectcolor6:#c783FF;
       top:50%;
       transform:translateY(-50%) translateX(-50%);
       // border-radius:50%;  
-      }  
+    } 
     
     &:hover > ul > .border2-1 > .samsung_img > img {
       // width:11.5vw;

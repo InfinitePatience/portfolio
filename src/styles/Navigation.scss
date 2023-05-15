@@ -1,5 +1,19 @@
 .nav {
+  z-index:1;
   position:absolute;
-  left:0;
-  top:0; 
+  left:25vw;
+  top:0;
+  border:1px solid red;
+  width:40vw;
+  height:40vw;
+.navi {
+  position:relative;
+  border-radius:50%;
+  width:40vw;
+  height:40vw;
+  background-color:gray;
 }
+  div {
+    color:#fff;
+  }
+} // nav

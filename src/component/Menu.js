@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import '../styles/Menu.scss';
-import Navigation from './Navigation';
-
+// import Navigation from './Navigation';
 
 
 function Menu() {
@@ -18,7 +17,7 @@ function Menu() {
     <div className='nav_container'>
       <div className='nav_inner'>
 
-        <div className='nav_btn' onClick={modaltoggle} ref={menuRef} >
+        <div className='nav_btn' onClick={modaltoggle} ref={menuRef}>
           <div className='menu_txt'>
             <span className='menu' >menu</span>
             <span className='close'>close</span>
@@ -31,7 +30,35 @@ function Menu() {
         </div>
         <div>
           {modal && (
-            <Navigation />
+            <div className='modal_container'>
+            <div className='modal_inner'>
+              <div className='modal_content'>
+              <div className='modal_top1'>
+                <span>INTRO</span>
+                <ul>
+                  <li>Cover</li>
+                  <li>Introduction</li>
+                </ul>
+              </div>
+              <div className='modal_top2'>
+                <span>PROJECT</span> 
+                <ul>
+                  <li>Davich</li>
+                  <li>Samsung</li>
+                  <li>KakaoTalk</li>
+                  <li>Netflix</li>
+                  <li>Cjone</li>
+                </ul>
+              </div>
+              <div className='modal_top3'>
+                <span>OTHER</span>
+                <ul>
+                  <li>Pure CSS</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            </div>
           )}
         </div>
       </div>

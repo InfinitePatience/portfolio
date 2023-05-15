@@ -113,6 +113,45 @@
 } // nav_container
 
 @keyframes menu {
-  0% {transform:rotate(0deg); transition:all 0.5s ease 0s; }
+  0% {transform:rotate(0deg); transition:all 0.5s ease 0s;}
   100% {transform:rotate(45deg);}
 }
+
+//모달창
+.modal_container {
+  z-index:1;
+  position:absolute;
+  left:25vw;
+  top:0;
+  border:1px solid red;
+  width:40vw;
+  height:40vw;
+
+.modal_inner {
+  position:relative;
+  border-radius:50%;
+  left:0;
+  width:40vw;
+  height:40vw;
+  background-color:gray;
+  
+  .modal_content {
+    position:absolute;
+    left:50%;
+    top:10%;
+    transform:translate(-50%);
+
+    div > span{
+      position:relative;
+      left:15%;
+      font-size:4vw;
+      font-weight:600;
+      color:#fff;
+    }
+    div > ul > li {
+      font-size:1.3vw;
+      
+    }
+  }
+}
+} 
