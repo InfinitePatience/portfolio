@@ -172,6 +172,23 @@ body {
 
   .project1 {
     background-color:$projectcolor1;
+
+    &:hover > ul > .border1-1 > .davich_img {
+      width:17vw;
+      height:17vw;
+      left:50%;
+      top:50%;
+      transform:translateY(-50%) translateX(-50%);
+      // border-radius:50%;  
+    } 
+    
+    &:hover > ul > .border1-1 > .davich_img > img {
+      // width:11.5vw;
+      // height:11vw;
+      left:50%;
+      top:50%;
+      transform:translateY(-50%) translateX(-50%);
+    }
     
     .border1-1 {
       position:fixed;
@@ -181,6 +198,32 @@ body {
       height:11vw;
       border:0.5208vw solid #202020;
       border-bottom-left-radius:50%;
+
+      .davich_img {
+        overflow:hidden;
+        position:absolute;
+        width:0vw;
+        height:0vw;
+        left:50%;
+        top:50%;
+        transform:translateY(-50%) translateX(-50%);
+        // border:1px solid red;
+        border-radius:50%;
+        animation: speed;
+        transition:all 0.5s linear 0s;
+
+      img {
+        position:absolute;
+        width:11.5208vw;
+        height:11.5208vw;
+        left:50%;
+        top:50%;
+        transform:translateY(-50%) translateX(-50%);
+        filter:grayscale(90%);
+        
+        border-bottom-left-radius:50%;  
+        }
+      }
 
       &:before {
         content:'';
@@ -212,7 +255,7 @@ body {
       height:13vw;
       border:0.5208vw solid #202020;
       border-top-left-radius:50%;
-    }
+   }
   }
   .project2 {
     background-color:$projectcolor2;

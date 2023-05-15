@@ -37,7 +37,7 @@ function Main() {
                 <li>#responsive</li>
                 <div className='border1-1'>
                   <div className='davich_img'>
-                    <img src={require('../images/samsung_img.PNG')} alt="samsung_image"/>
+                    <img src={require('../images/davich.PNG')} alt="davich_image"/>
                   </div>
                 </div>
                 <div className='border1-2'></div>
