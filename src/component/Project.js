@@ -10,7 +10,7 @@ function Project() {
     <div className='logo'>
         <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
     </div>
-      <div className='project_animation'></div>
+      <div className='project_animation davich'></div>
       <div className='project_moveproject'></div>
       <div className='project_title'>
         <span>

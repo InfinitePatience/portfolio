@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../styles/Kakao.scss';
 
 function Kakao() {
   return (
@@ -8,7 +9,7 @@ function Kakao() {
     <div className='logo'>
         <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
     </div>
-      <div className='project_animation samsung'></div>
+      <div className='project_animation kakao'></div>
       <div className='project_moveproject'></div>
       <div className='project_title'>
         <span>
@@ -28,10 +29,24 @@ function Kakao() {
         <dd>- Axios를 사용하여 Api를 호출하여 데이터 전달.</dd>
         <dd>- 숙련도를 높이기 위해 HTML과 CSS로 작성한 코드를 SCSS와 React로 변경. </dd>
       </dl>
+      <dl>
+        <dt>작업기간</dt>
+        <dd>2023.04 ~ 2023.05</dd>
+        <dt>기여도</dt>
+        <dd>100%</dd>
+        <dt>사용기술</dt>
+        <dd>
+          <img src={require('../images/HTML5.png')} alt="HTML_image" />
+          <img src={require('../images/Github.png')} alt="Github_image" />
+          <img src={require('../images/Vector.png')} alt="JS_image" />
+          <img src={require('../images/React.png')} alt="React_image" />
+          <img src={require('../images/Firebase.png')} alt="firbase_image" />
+        </dd>
+      </dl>
     </div>
-      <div className='border_samsung'>
-        <div className='border_samsung1'></div>
-        <div className='border_samsung2'></div>
+      <div className='border_kakao'>
+        <div className='border_kakao1'></div>
+        <div className='border_kakao2'></div>
       </div>
     </>
   )

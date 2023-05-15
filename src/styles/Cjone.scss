@@ -1,5 +1,5 @@
 .cjone { 
-  background-color:#a2e053 !important;
+  background-color:#83c7FF !important;
 }
 .border_cjone {
 
@@ -7,21 +7,21 @@
         z-index:-2;
         position:absolute;
         right:15vw;
-        bottom:-42vw;
+        bottom:-2vw;
         width:19vw;
         min-width:192px;
         height:19vw;
         min-height:192px;
         border:0.6vw solid #373737;
-        border-bottom-left-radius:50%;
-        border-top-left-radius:50%; 
+        border-top-right-radius:50%;
+        border-bottom-left-radius:50%; 
   
         &:before {
           content:'';
           display:block;
           position:absolute;
           top:-37%;
-          right:-37%;
+          left:-37%;
           // border:1px solid red;
           width:8vw;
           height:8vw;
@@ -32,17 +32,17 @@
           display:block;
           position:absolute;
           top:-0.6vw;
-          right:-0.6vw;
+          left:-0.6vw;
           width:0.6vw;
           height:0.6vw;
-          background-color:#a2e053;
+          background-color:#83c7FF;
         }
       }
   
       .border_cjone2 {
         z-index:-1;
         position:absolute;
-        bottom:-30vw;
+        bottom:-10vw;
         right:3vw;
         width:18vw;
         min-width:192px; // 10vw

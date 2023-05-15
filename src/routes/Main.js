@@ -35,7 +35,11 @@ function Main() {
                 <li>Responsive Web Davich Glasses</li>
                 <li>#web</li>
                 <li>#responsive</li>
-                <div className='border1-1'></div>
+                <div className='border1-1'>
+                  <div className='davich_img'>
+                    <img src={require('../images/samsung_img.PNG')} alt="samsung_image"/>
+                  </div>
+                </div>
                 <div className='border1-2'></div>
               </ul>
             </Link>

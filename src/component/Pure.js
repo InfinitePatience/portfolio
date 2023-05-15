@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../styles/Pure.scss';
 
 function Pure() {
   return (
@@ -8,7 +9,7 @@ function Pure() {
     <div className='logo'>
         <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
     </div>
-      <div className='project_animation samsung'></div>
+      <div className='project_animation pure'></div>
       <div className='project_moveproject'></div>
       <div className='project_title'>
         <span>
