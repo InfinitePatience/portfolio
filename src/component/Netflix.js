@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Netflix.scss';
+import Menu from './Menu';
 
 function Netflix() {
   return (
@@ -8,6 +9,23 @@ function Netflix() {
     <div className='project_container'>
     <div className='logo'>
         <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Menu />
+    </div>
+    <div className='detail_netflix'>
+      <dl>
+        <dt><span>P</span>ERIOD</dt>
+        <dd>2023.03 ~ 2023.04</dd>
+        <dt><span>L</span>EVEL OF <br /><span>C</span>ONTRIBUTION</dt>
+        <dd>100%</dd>
+        <dt><span>S</span>KILLS</dt>
+        <dd>
+          <img src={require('../images/HTML5.png')} alt="HTML_image" />
+          <img src={require('../images/Github.png')} alt="Github_image" />
+          <img src={require('../images/Vector.png')} alt="JS_image" />
+          <img src={require('../images/React.png')} alt="React_image" />
+          <img src={require('../images/Firebase.png')} alt="firbase_image" />
+        </dd>
+      </dl>
     </div>
       <div className='project_animation netflix'></div>
       <div className='project_moveproject'></div>
@@ -28,20 +46,6 @@ function Netflix() {
         <dd>- React로 인터페이스를 구축하여 SPA(Single Page Application) 제작 . </dd>
         <dd>- React Swiper를 사용해 배너 슬라이드 생성</dd>
         <dd>- Firebase를 활용하여 이메일 및 로그인 기능 구현.</dd>
-      </dl>
-      <dl>
-        <dt>작업기간</dt>
-        <dd>2023.03 ~ 2023.04</dd>
-        <dt>기여도</dt>
-        <dd>100%</dd>
-        <dt>사용기술</dt>
-        <dd>
-        <img src={require('../images/HTML5.png')} alt="HTML_image" />
-          <img src={require('../images/Github.png')} alt="Github_image" />
-          <img src={require('../images/Vector.png')} alt="JS_image" />
-          <img src={require('../images/React.png')} alt="React_image" />
-          <img src={require('../images/Firebase.png')} alt="firbase_image" />
-        </dd>
       </dl>
     </div>
       <div className='border_netflix'>

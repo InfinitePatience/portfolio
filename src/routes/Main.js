@@ -54,7 +54,7 @@ function Main() {
                 <li>#accessibility</li>
                 <div className='border2-1'>
                   <div className='samsung_img'>
-                    <img src={require('../images/samsung_img.PNG')} alt="samsung_image"/>
+                    <img src={require('../images/samsung.jpg')} alt="samsung_image"/>
                   </div>
                 </div>
                 <div className='border2-2'></div>
@@ -71,7 +71,11 @@ function Main() {
                 <li>React App <br />Kakao Talk</li>
                 <li>#react</li>
                 <li>#accessibility</li>
-                <div className='border3-1'></div>
+                <div className='border3-1'>
+                  <div className='kakao_img'>
+                    <img src={require('../images/kakao.png')} alt="kakao_image"/>
+                  </div>
+                </div>
                 <div className='border3-2'></div>
               </ul>
             </Link>
@@ -84,7 +88,11 @@ function Main() {
                 <li>React App <br />Netflix</li>
                 <li>#react</li>
                 <li>#accessibility</li>
-                <div className='border4-1'></div>
+                <div className='border4-1'>
+                  <div className='netflix_img'>
+                    <img src={require('../images/netflix.jpg')} alt="netflix_image"/>
+                  </div>
+                </div>
                 <div className='border4-2'></div>
               </ul>
             </Link>
@@ -97,7 +105,11 @@ function Main() {
                 <li>Responsive Web <br />CJ one</li>
                 <li>#media query</li>
                 <li>#accessibility</li>
-                <div className='border5-1'></div>
+                <div className='border5-1'>
+                  <div className='cjone_img'>
+                    <img src={require('../images/cjone.jpg')} alt="cjone_image"/>
+                  </div>
+                </div>
                 <div className='border5-2'></div>
               </ul>
             </Link>
@@ -110,7 +122,11 @@ function Main() {
                 <li>Pure CSS <br />Animation</li>
                 <li>#css</li>
                 <li>#animation</li>
-                <div className='border6-1'></div>
+                <div className='border6-1'>
+                  <div className='pure_img'>
+                    <img src={require('../images/pure.PNG')} alt="pure_image"/>
+                  </div>
+                </div>
                 <div className='border6-2'></div>
               </ul>
             </Link>

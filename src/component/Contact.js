@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className='contact_container'>
       <div className='contact_title'>
-        <b>Let's Make It Together</b>
+        <p>Let's Make It Together</p>
       </div>
       <div className='contact_txt'>
         <span>Thank You</span>
@@ -14,17 +14,17 @@ function Contact() {
 
       <div className='address'>
         <div>
-          <span>git hub</span>
+          <span>GIT HUB</span>
           <Link target={'_blank'} to="https://github.com/InfinitePatience">https://github.com/InfinitePatience</Link>
         </div>
 
         <div>
-          <span>email</span>
+          <span>EMAIL</span>
           <Link to={'mailto:roysjk34@gmail.com'}>roysjk34@gmail.com</Link>
         </div>
 
         <div>
-          <span>phone</span>
+          <span>PHONE</span>
           <p>010 - 7241 - 7593</p>
         </div>
       </div>

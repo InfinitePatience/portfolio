@@ -9,11 +9,13 @@ import Netflix from './component/Netflix';
 import Kakao from './component/Kakao';
 import Pure from './component/Pure';
 import Menu from './component/Menu';
+import Cover from './component/Cover';
 
 function App() {
   return (
-   <BrowserRouter basename={process.env.PUBLIC_URL}>
+   <BrowserRouter>
     <Routes>
+      <Route path='/portfolio' element={<Cover />}/>
       <Route path='/' element={<Main />}/>
       <Route path='/Menu' element={<Menu />}/>
       <Route path='/Project' element={<Project />}/>

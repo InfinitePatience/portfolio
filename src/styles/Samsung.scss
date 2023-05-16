@@ -1,3 +1,35 @@
+.detail_samsung {
+  // border:1px solid blue;
+  position:absolute;
+  right:5%;
+  top:15%;
+
+  dl {
+    dt {
+      font-size:3vw;
+      font-weight:bold;
+      margin-bottom:1vw;
+      color:#fff;
+      
+      span {
+        color:#ffb183;
+      }
+    }
+    dd {
+      width:20vw;
+      line-height:50px;
+      margin-left:3.125vw;
+      font-size:1.5vw;
+      margin-bottom:2vw;
+      color:#eeeeee;
+        img {
+          margin-right:1vw;
+        }
+    }
+    
+  }
+}
+
 .samsung {
   background-color:#ffb183 !important;
 }
@@ -51,5 +83,28 @@
         border:0.6vw solid #373737;
         border-bottom-left-radius:300px;
         border-bottom-right-radius:300px;
+        border-top-right-radius:300px;
+
+        &:before {
+          content:'';
+          display:block;
+          position:absolute;
+          top:-20%;
+          left:-15%;
+          // border:1px solid red;
+          width:4vw;
+          height:8vw;
+          background-color:#202020;
+        }
+        &:after {
+          content:'';
+          display:block;
+          position:absolute;
+          top:-0.6vw;
+          left:-0.6vw;
+          width:0.6vw;
+          height:0.6vw;
+          background-color:#ffb183;;
+        }
       }
     }

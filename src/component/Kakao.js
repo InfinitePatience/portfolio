@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Kakao.scss';
+import Menu from './Menu';
 
 function Kakao() {
   return (
@@ -8,6 +9,23 @@ function Kakao() {
     <div className='project_container'>
     <div className='logo'>
         <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Menu />
+    </div>
+    <div className='detail_kakao'>
+     <dl>
+        <dt><span>P</span>ERIOD</dt>
+        <dd>2023.03 ~ 2023.04</dd>
+        <dt><span>L</span>EVEL OF <br /><span>C</span>ONTRIBUTION</dt>
+        <dd>100%</dd>
+        <dt><span>S</span>KILLS</dt>
+        <dd>
+          <img src={require('../images/HTML5.png')} alt="HTML_image" />
+          <img src={require('../images/Github.png')} alt="Github_image" />
+          <img src={require('../images/Vector.png')} alt="JS_image" />
+          <img src={require('../images/React.png')} alt="React_image" />
+          <img src={require('../images/Firebase.png')} alt="firbase_image" />
+        </dd>
+      </dl>
     </div>
       <div className='project_animation kakao'></div>
       <div className='project_moveproject'></div>
@@ -28,20 +46,6 @@ function Kakao() {
         <dd>- Firebase의 DB/Storge를 사용해 프로필 변경/사진/메시지 보내기 기능 구현 .</dd>
         <dd>- Axios를 사용하여 Api를 호출하여 데이터 전달.</dd>
         <dd>- 숙련도를 높이기 위해 HTML과 CSS로 작성한 코드를 SCSS와 React로 변경. </dd>
-      </dl>
-      <dl>
-        <dt>작업기간</dt>
-        <dd>2023.04 ~ 2023.05</dd>
-        <dt>기여도</dt>
-        <dd>100%</dd>
-        <dt>사용기술</dt>
-        <dd>
-          <img src={require('../images/HTML5.png')} alt="HTML_image" />
-          <img src={require('../images/Github.png')} alt="Github_image" />
-          <img src={require('../images/Vector.png')} alt="JS_image" />
-          <img src={require('../images/React.png')} alt="React_image" />
-          <img src={require('../images/Firebase.png')} alt="firbase_image" />
-        </dd>
       </dl>
     </div>
       <div className='border_kakao'>

@@ -1,33 +1,66 @@
+
+
 .contact_container {
   width:90vw;
-  margin:10.417vw auto;
+  margin:15vw auto;
   border:1px solid yellow;
 
   .contact_title {
     width:inherit;
     margin-bottom:2.6vw;
-  b {
-    font-size:7vw;
-    font-family:'regular';
-    font-weight:600;
-    color:#fff;
+    p {
+      font-size:5vw;
+      font-family: 'Inter', sans-serif;
+      color:#fff;
   }
   }
 
   .contact_txt {
     width:inherit;
     text-align:center;
+    margin-bottom:2vw;
     span {
       font-size:5vw;
-      font-family:'Montserrat', sans-serif;
-      font-weight:500;
+      font-family: 'Inter', sans-serif;
+      font-weight:600;
       color:#f9f9f9;
     }
   }
 
   .address {
+    // border:1px solid red;
+    margin-left:25%;
+    font-family: 'Inter', sans-serif;
+    font-weight:600;
+    color:#777;
+  
+    
+    div {
+      display:flex;
+      align-items:center;
+      margin-bottom:2vw;
+
+      & > a {
+        font-size:1.5vw;
+        color:#f9f9f9;
+        transition:all 0.5s ease 0s;
+
+       &:hover {
+        color:#E70000
+       }
+      }
+      & > p {
+        font-size:1.5vw;
+        color:#f9f9f9;
+      }
+
+    }
+
     div > span {
-      font-size:30px;
+      width: 200px;
+      font-size:2vw;
+      margin-right:10vw;
+      // border: 1px solid #fff;
     }
   }
 }

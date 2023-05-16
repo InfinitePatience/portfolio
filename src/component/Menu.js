@@ -7,10 +7,22 @@ function Menu() {
 
   const [modal, setModal] = useState(false);
   const menuRef = useRef();
+  const modalwindow = useRef();
 
   const modaltoggle = () => {
     setModal((prev) => !prev)
     menuRef.current.classList.toggle('on');
+    // document.body.style.overflow = 'hidden'
+  };
+  
+  const modaloutclick = () => {
+    menuRef.current.classList.remove('on');
+    document.body.style.overflow = 'auto'
+    setModal(false);
+  };
+
+  const oncloseclick = () => {
+    document.body.style.overflow = 'auto'
   };
 
   return (
@@ -19,8 +31,8 @@ function Menu() {
 
         <div className='nav_btn' onClick={modaltoggle} ref={menuRef}>
           <div className='menu_txt'>
-            <span className='menu' >menu</span>
-            <span className='close'>close</span>
+            <span className='menu'>menu</span>
+            <span className='close' onClick={modaloutclick}>close</span>
           </div>
           <div className='ham_btn'>
             <div className='ham_btn1'></div>
@@ -30,8 +42,9 @@ function Menu() {
         </div>
         <div>
           {modal && (
-            <div className='modal_container'>
-            <div className='modal_inner'>
+            <div className='modal_container' >
+              <div className='modal_outside' onClick={modaloutclick}></div>
+            <div className='modal_inner'> 
               <div className='modal_content'>
               <div className='modal_top1'>
                 <span>INTRO</span>

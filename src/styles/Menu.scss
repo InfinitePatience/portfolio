@@ -7,6 +7,7 @@
 
 
   .nav_btn {
+    z-index:10;
     overflow: hidden;
     position:absolute;
     top:-4vw;
@@ -122,19 +123,38 @@
   z-index:1;
   position:absolute;
   left:25vw;
-  top:0;
-  border:1px solid red;
-  width:40vw;
-  height:40vw;
+  top:50%;
+  // border:1px solid blueviolet;
+  width:1vw;
+  height:1vw;
+ 
+  .modal_outside{
+    position:absolute;
+    left:-30vw;
+    top:-6vw;
+    width:101vw;
+    height:100vw;
+    background-color:rgba(0,0,0,0.5);
+  }
 
 .modal_inner {
-  position:relative;
+  position:absolute;
   border-radius:50%;
-  left:0;
-  width:40vw;
-  height:40vw;
+  top:20.5vw;
+  left:20vw;
+  transform:translateY(-50%) translateX(-50%);
+  overflow:hidden;
+
   background-color:gray;
-  
+  animation:modal 1s ease 0s;
+  animation-fill-mode: forwards; // 마지막 프레임 유지
+
+  @keyframes modal {
+    from {width:0vw; height:0vw;}
+    to {width:40vw; height:40vw;}
+  }
+
+
   .modal_content {
     position:absolute;
     left:50%;

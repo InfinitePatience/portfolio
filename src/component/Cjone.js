@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Cjone.scss';
+import Menu from './Menu';
 
 function Cjone() {
   return (
@@ -8,6 +9,21 @@ function Cjone() {
     <div className='project_container'>
     <div className='logo'>
         <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Menu />
+    </div>
+    <div className='detail_cjone'>
+      <dl>
+        <dt><span>P</span>ERIOD</dt>
+        <dd>2023.03 ~ 2023.04</dd>
+        <dt><span>L</span>EVEL OF <br /><span>C</span>ONTRIBUTION</dt>
+        <dd>100%</dd>
+        <dt><span>L</span>ANGUAGE</dt>
+        <dd>
+          <img src={require('../images/HTML5.png')} alt="HTML_image" />
+          <img src={require('../images/CSS3.png')} alt="CSS3_image" />
+          <img src={require('../images/Javascript.png')} alt="JS_image" />
+        </dd>
+      </dl>
     </div>
       <div className='project_animation cjone'></div>
       <div className='project_moveproject'></div>
@@ -27,18 +43,6 @@ function Cjone() {
         <dd>- 미디어쿼리를 이용하여 PC, 태블릿 모바일에서 자동으로 해상도 레이아웃 변경. </dd>
         <dd>- JavaScript 기능으로 영상 재생, 검색창 토글, Top 버튼 등 기능 구현.</dd>
         <dd>- 웹 콘텐츠의 접근성 지침과 웹 표준 준수. HTML / CSS / W3C 유효성 검사 통과.</dd>
-      </dl>
-      <dl>
-        <dt>작업기간</dt>
-        <dd>2023.03 ~ 2023.04</dd>
-        <dt>기여도</dt>
-        <dd>100%</dd>
-        <dt>사용언어</dt>
-        <dd>
-          <img src={require('../images/HTML5.png')} alt="HTML_image" />
-          <img src={require('../images/CSS3.png')} alt="CSS3_image" />
-          <img src={require('../images/Javascript.png')} alt="JS_image" />
-        </dd>
       </dl>
     </div>
       <div className='border_cjone'>
