@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ddccaa1f.css",
-    "main.js": "/portfolio/static/js/main.4301ebc9.js",
-    "static/media/davich.PNG": "/portfolio/static/media/davich.552d90ac423aca814e4b.PNG",
-    "static/media/samsung_img.PNG": "/portfolio/static/media/samsung_img.99308b24ff439ab0c92b.PNG",
+    "main.css": "/portfolio/static/css/main.d69a6ec6.css",
+    "main.js": "/portfolio/static/js/main.8751744b.js",
+    "static/media/emoji.mp4": "/portfolio/static/media/emoji.eeae87e1cbfd709b03ba.mp4",
+    "static/media/purecss.mp4": "/portfolio/static/media/purecss.e309c539768b746a4ac9.mp4",
+    "static/media/davich.PNG": "/portfolio/static/media/davich.1aa9da2230f1824422e9.PNG",
+    "static/media/netflix.jpg": "/portfolio/static/media/netflix.1412b1dd973962f32a39.jpg",
+    "static/media/samsung.jpg": "/portfolio/static/media/samsung.c1830459da6674735b45.jpg",
     "static/media/picture.jpg": "/portfolio/static/media/picture.cb0726a6618cea888ffa.jpg",
+    "static/media/cjone.jpg": "/portfolio/static/media/cjone.545b10c2f1069922fd87.jpg",
+    "static/media/pure.PNG": "/portfolio/static/media/pure.66992112e96a60577286.PNG",
+    "static/media/kakao.png": "/portfolio/static/media/kakao.f3c76effeae07c43f359.png",
     "static/media/portfolio_logo.png": "/portfolio/static/media/portfolio_logo.873fb8623bc377cd0c11.png",
     "static/media/portfolio_logo_white.png": "/portfolio/static/media/portfolio_logo_white.93f48c38541d17b31663.png",
     "index.html": "/portfolio/index.html",
-    "main.ddccaa1f.css.map": "/portfolio/static/css/main.ddccaa1f.css.map",
-    "main.4301ebc9.js.map": "/portfolio/static/js/main.4301ebc9.js.map"
+    "main.d69a6ec6.css.map": "/portfolio/static/css/main.d69a6ec6.css.map",
+    "main.8751744b.js.map": "/portfolio/static/js/main.8751744b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddccaa1f.css",
-    "static/js/main.4301ebc9.js"
+    "static/css/main.d69a6ec6.css",
+    "static/js/main.8751744b.js"
   ]
 }
