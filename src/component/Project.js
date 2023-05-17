@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/Project.scss';
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
+import davich from '../video/davich.mp4';
+import davich_tablet from '../video/davich_tablet.mp4';
+import davich_mobile from '../video/davich_mobile.mp4';
+import Validation from './Validation';
 
 function Project() {
+  
+  const [openvalid, setOpenValid] = useState(false);
 
+  const validclick = () => {
+    setOpenValid((prev) => !prev);
+  }
+
+  const davich_validation = "davich_validation"
+
+
+  
   return (
     <>
     <div className='project_container'>
@@ -27,7 +41,7 @@ function Project() {
       </dl>
       </div>
       <div className='project_animation davich'></div>
-      <div className='project_moveproject'></div>
+      <div className='project_moveproject'></div> {/* 아직 안함 */}
       <div className='project_title'>
         <span>
           <p>#web / #responsive</p>
@@ -36,9 +50,47 @@ function Project() {
         </span>
       </div>
     </div>
-    <div className='davich_mockup'>
-      
-    </div>
+    <div className='davich_video'>
+      <div className='davich_content'>
+        <div className='davich_shortcuts_circle' onClick={validclick}>
+          <p>VALIDATION</p>
+          <p>CLICK !</p>
+        </div>   
+      </div> {/* // davich_shortcuts */}
+      <div className='davich_content2'>
+        {openvalid && ( 
+        <Validation setOpenValid={setOpenValid} className={davich_validation}/>
+        )}
+        <div className='davich_mockup'>
+          <div className='davich_pc'>
+            <img src={require('../images/pc.png')} alt="pc_image"/>
+            <div className='davich_pc_screen'>
+              <video autoPlay loop muted preload>
+                <source src={davich} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div className='davich_tablet'>
+            <img src={require('../images/ipad.png')} alt="tablet_image"/>
+            <div className='davich_tablet_screen'>
+              <video autoPlay loop muted preload>
+                <source src={davich_tablet} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div className='davich_mobile'>
+            <img src={require('../images/iphone14.png')} alt="mobile_image"/>
+            <div className='davich_mobile_screen'>
+              <video autoPlay loop muted preload>
+                <source src={davich_mobile} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div> {/* // davich_mockup */}
+      </div> {/* // davich_content */}
+    </div> {/* // davich_video */}
     <div className='project_explanation'>
       <dl>
         <dt>프로젝트 개요<img src={require("../images/quote.png")} alt="" /></dt>

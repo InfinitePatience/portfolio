@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Samsung.scss'
 import Menu from './Menu'
+import Validation from './Validation';
 
 function Samsung() {
+  const [openvalid, setOpenValid] = useState(false);
+
+  const validclick = () => {
+    setOpenValid((prev) => !prev);
+  }
+
+  const samsung_validation = "samsung_validation"
+
   return (
     <>
     <div className='project_container'>
@@ -35,6 +44,47 @@ function Samsung() {
         </span>
       </div>
     </div>
+    <div className='samsung_video'>
+      <div className='samsung_content'>
+        <div className='samsung_shortcuts_circle' onClick={validclick}>
+          <p>VALIDATION</p>
+          <p>CLICK !</p>
+        </div>   
+      </div> {/* // samsung_shortcuts */}
+      <div className='samsung_content2'>
+        {openvalid && ( 
+        <Validation setOpenValid={setOpenValid} className={samsung_validation}/>
+        )}
+        <div className='samsung_mockup'>
+          <div className='samsung_pc'>
+            <img src={require('../images/pc.png')} alt="pc_image"/>
+            <div className='samsung_pc_screen'>
+              {/* <video autoPlay loop muted preload>
+                <source src={davich} type="video/mp4" />
+              </video> */}
+            </div>
+          </div>
+
+          <div className='samsung_tablet'>
+            <img src={require('../images/pc.png')} alt="tablet_image"/>
+            <div className='samsung_tablet_screen'>
+              {/* <video autoPlay loop muted preload>
+                <source src={davich_tablet} type="video/mp4" />
+              </video> */}
+            </div>
+          </div>
+
+          <div className='samsung_mobile'>
+            <img src={require('../images/pc.png')} alt="mobile_image"/>
+            <div className='samsung_mobile_screen'>
+              {/* <video autoPlay loop muted preload>
+                <source src={davich_mobile} type="video/mp4" />
+              </video> */}
+            </div>
+          </div>
+        </div> {/* // samsung_mockup */}
+      </div> {/* // samsung_content */}
+    </div> {/* // samsung_video */}
     <div className='project_explanation'>
       <dl>
         <dt>프로젝트 개요<img src={require("../images/quote.png")} alt="" /></dt>
