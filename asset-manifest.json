@@ -1,10 +1,35 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d69a6ec6.css",
-    "main.js": "/portfolio/static/js/main.8751744b.js",
+    "main.css": "/portfolio/static/css/main.c8671d09.css",
+    "main.js": "/portfolio/static/js/main.8aaff277.js",
+    "static/media/davich_tablet.mp4": "/portfolio/static/media/davich_tablet.3911981b2fb3365d7228.mp4",
+    "static/media/phone_group1.png": "/portfolio/static/media/phone_group1.cacbd5c69b36e99f2bea.png",
+    "static/media/davich.mp4": "/portfolio/static/media/davich.117fada567ea632a69ed.mp4",
+    "static/media/davich_mobile.mp4": "/portfolio/static/media/davich_mobile.212d4a91e3ea5f57f6b0.mp4",
+    "static/media/samsung_main.mp4": "/portfolio/static/media/samsung_main.fd3f6cf338b2f76d7f64.mp4",
     "static/media/emoji.mp4": "/portfolio/static/media/emoji.eeae87e1cbfd709b03ba.mp4",
     "static/media/purecss.mp4": "/portfolio/static/media/purecss.e309c539768b746a4ac9.mp4",
+    "static/media/cjone_mobile.mp4": "/portfolio/static/media/cjone_mobile.4f8e99228e7e342694a6.mp4",
+    "static/media/cjone_pc.mp4": "/portfolio/static/media/cjone_pc.d6102b5bb608a8dd5b10.mp4",
+    "static/media/cjone_tablet.mp4": "/portfolio/static/media/cjone_tablet.db26d88bcef52c084fdd.mp4",
+    "static/media/samsung_sub1.mp4": "/portfolio/static/media/samsung_sub1.5a5b2ffb3f25a9a99863.mp4",
+    "static/media/samsung_sub2.mp4": "/portfolio/static/media/samsung_sub2.c6fcc06639d99dfee903.mp4",
+    "static/media/pc_front.png": "/portfolio/static/media/pc_front.e9818ff3cdebb50a2e5a.png",
+    "static/media/pc_left.png": "/portfolio/static/media/pc_left.66a2830c1086532bceff.png",
+    "static/media/kakao_login.mp4": "/portfolio/static/media/kakao_login.3eaa88eb610f00e7ba05.mp4",
+    "static/media/kakao_profile.mp4": "/portfolio/static/media/kakao_profile.4539ecfc2986997b59d4.mp4",
+    "static/media/pc_right.png": "/portfolio/static/media/pc_right.f762cb81137373716416.png",
+    "static/media/kakao_chatting.mp4": "/portfolio/static/media/kakao_chatting.250ffd5b773d9b258cae.mp4",
+    "static/media/ipad.png": "/portfolio/static/media/ipad.5c2462fb99e931177e24.png",
+    "static/media/삼성전기 W3C CSS 검사 결과.png": "/portfolio/static/media/삼성전기 W3C CSS 검사 결과.62af70d2dbe03c85636c.png",
     "static/media/davich.PNG": "/portfolio/static/media/davich.1aa9da2230f1824422e9.PNG",
+    "static/media/CJONE W3C CSS 검사 결과.png": "/portfolio/static/media/CJONE W3C CSS 검사 결과.eff24a5b7c35f18a2dcf.png",
+    "static/media/pc.png": "/portfolio/static/media/pc.03f028958862de591860.png",
+    "static/media/다비치 CSS 검사결과.png": "/portfolio/static/media/다비치 CSS 검사결과.bcdf5338b4f36ab35d38.png",
+    "static/media/iphone14.png": "/portfolio/static/media/iphone14.a6278f67600aea720cee.png",
+    "static/media/CJONE HTML 검사 결과.png": "/portfolio/static/media/CJONE HTML 검사 결과.8affe6390536025f3eed.png",
+    "static/media/다비치 HTML 검사결과.png": "/portfolio/static/media/다비치 HTML 검사결과.cebaa5bf4d2eac126f9c.png",
+    "static/media/삼성전기 HTML 검사 결과.png": "/portfolio/static/media/삼성전기 HTML 검사 결과.66a337feff30cb60c4ec.png",
     "static/media/netflix.jpg": "/portfolio/static/media/netflix.1412b1dd973962f32a39.jpg",
     "static/media/samsung.jpg": "/portfolio/static/media/samsung.c1830459da6674735b45.jpg",
     "static/media/picture.jpg": "/portfolio/static/media/picture.cb0726a6618cea888ffa.jpg",
@@ -13,12 +38,15 @@
     "static/media/kakao.png": "/portfolio/static/media/kakao.f3c76effeae07c43f359.png",
     "static/media/portfolio_logo.png": "/portfolio/static/media/portfolio_logo.873fb8623bc377cd0c11.png",
     "static/media/portfolio_logo_white.png": "/portfolio/static/media/portfolio_logo_white.93f48c38541d17b31663.png",
+    "static/media/삼성전기 Lighthouse 검사결과.PNG": "/portfolio/static/media/삼성전기 Lighthouse 검사결과.181922a3d2d35123e23f.PNG",
+    "static/media/다비치 Lighthouse 검사결과.PNG": "/portfolio/static/media/다비치 Lighthouse 검사결과.2322f5752137b0e40d2b.PNG",
+    "static/media/CJONE Lighthouse 검사결과.PNG": "/portfolio/static/media/CJONE Lighthouse 검사결과.ec9c15869da6ec6b495d.PNG",
     "index.html": "/portfolio/index.html",
-    "main.d69a6ec6.css.map": "/portfolio/static/css/main.d69a6ec6.css.map",
-    "main.8751744b.js.map": "/portfolio/static/js/main.8751744b.js.map"
+    "main.c8671d09.css.map": "/portfolio/static/css/main.c8671d09.css.map",
+    "main.8aaff277.js.map": "/portfolio/static/js/main.8aaff277.js.map"
   },
   "entrypoints": [
-    "static/css/main.d69a6ec6.css",
-    "static/js/main.8751744b.js"
+    "static/css/main.c8671d09.css",
+    "static/js/main.8aaff277.js"
   ]
 }
