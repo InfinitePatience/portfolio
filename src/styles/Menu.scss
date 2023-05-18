@@ -145,8 +145,8 @@
   transform:translateY(-50%) translateX(-50%);
   overflow:hidden;
 
-  background-color:gray;
-  animation:modal 1s ease 0s;
+  background-color:#202020;
+  animation:modal 0.5s ease 0s;
   animation-fill-mode: forwards; // 마지막 프레임 유지
 
   @keyframes modal {
@@ -168,9 +168,13 @@
       font-weight:600;
       color:#fff;
     }
-    div > ul > li {
+    div > ul > li > a {
       font-size:1.3vw;
-      
+      color:#d9d9d9;
+
+      &:hover {
+        color:#f00;
+      }
     }
   }
 }

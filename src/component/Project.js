@@ -18,7 +18,6 @@ function Project() {
   const davich_validation = "davich_validation"
 
 
-  
   return (
     <>
     <div className='project_container'>
@@ -55,8 +54,12 @@ function Project() {
         <div className='davich_shortcuts_circle' onClick={validclick}>
           <p>VALIDATION</p>
           <p>CLICK !</p>
-        </div>   
-      </div> {/* // davich_shortcuts */}
+        </div>
+        <Link target={'_blank'} to={'https://infinitepatience.github.io/davich_project/'} className='davich_github'>
+          <p><img src={require("../images/github_img.png")} alt="github_image" />&nbsp;GitHub</p>
+          <p>CLICK !</p>
+        </Link>
+      </div> {/* // davich_content */}
       <div className='davich_content2'>
         {openvalid && ( 
         <Validation setOpenValid={setOpenValid} className={davich_validation}/>

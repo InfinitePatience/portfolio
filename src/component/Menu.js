@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import '../styles/Menu.scss';
+import { Link } from 'react-router-dom';
 // import Navigation from './Navigation';
 
 
@@ -49,24 +50,24 @@ function Menu() {
               <div className='modal_top1'>
                 <span>INTRO</span>
                 <ul>
-                  <li>Cover</li>
+                  <li><Link to={'/portfolio'}>Cover</Link></li>
                   <li>Introduction</li>
                 </ul>
               </div>
               <div className='modal_top2'>
                 <span>PROJECT</span> 
                 <ul>
-                  <li>Davich</li>
-                  <li>Samsung</li>
-                  <li>KakaoTalk</li>
-                  <li>Netflix</li>
-                  <li>Cjone</li>
+                  <li><Link to={'/Project'}>Davich</Link></li>
+                  <li><Link to={'/Samsung'}>Samsung</Link></li>
+                  <li><Link to={'/Kakao'}>KakaoTalk</Link></li>
+                  <li><Link to={'/Netflix'}>Netflix</Link></li>
+                  <li><Link to={'/Cjone'}>Cjone</Link></li>
                 </ul>
               </div>
               <div className='modal_top3'>
                 <span>OTHER</span>
                 <ul>
-                  <li>Pure CSS</li>
+                  <li><Link to={'/Pure'}>Pure CSS</Link></li>
                 </ul>
               </div>
               </div>

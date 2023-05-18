@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Netflix.scss';
 import Menu from './Menu';
+// import netflix from '../video/netflix.mp4';
+// import netflix_tablet from '../video/netflix_tablet.mp4';
+// import netflix_mobile from '../video/netflix_mobile.mp4';
 
 function Netflix() {
   return (
@@ -37,6 +40,44 @@ function Netflix() {
         </span>
       </div>
     </div>
+    <div className='netflix_video'>
+      <div className='netflix_content'>
+        <Link target={'_blank'} to={''} className='netflix_github'>
+          <p><img src={require("../images/github_img.png")} alt="github_image" />&nbsp;GitHub</p>
+          <p>CLICK !</p>
+        </Link>
+      </div> {/* // netflix_content */}
+      <div className='netflix_content2'>
+        <div className='netflix_mockup'>
+          <div className='netflix_pc'>
+            <img src={require('../images/pc.png')} alt="pc_image"/>
+            <div className='netflix_pc_screen'>
+             {/*  <video autoPlay loop muted preload>
+                <source src={netflix_main} type="video/mp4" />
+              </video> */}
+            </div>
+          </div>
+
+          <div className='netflix_tablet'>
+            <img src={require('../images/ipad.png')} alt="tablet_image"/>
+            <div className='netflix_tablet_screen'>
+           {/*    <video autoPlay loop muted preload>
+                <source src={netflix_tablet} type="video/mp4" />
+              </video> */}
+            </div>
+          </div>
+
+          <div className='netflix_mobile'>
+            <img src={require('../images/iphone14.png')} alt="mobile_image"/>
+            <div className='netflix_mobile_screen'>
+            {/*   <video autoPlay loop muted preload>
+                <source src={netflix_mobile} type="video/mp4" />
+              </video> */}
+            </div>
+          </div>
+        </div> {/* // netflix_mockup */}
+      </div> {/* // netflix_content */}
+    </div> {/* // netflix_video */}
     <div className='project_explanation'>
       <dl>
         <dt>프로젝트 개요<img src={require("../images/quote.png")} alt="" /></dt>

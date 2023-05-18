@@ -1,3 +1,8 @@
+$transition:all 0.2s ease 0s;
+$font:'Inter', sans-serif;
+
+
+
 .detail_kakao {
   // border:1px solid blue;
   position:absolute;
@@ -108,3 +113,172 @@
         }
       }
     }
+
+
+
+.kakao_content {
+  z-index:1;
+  position:relative;
+  left:5%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:10vw;
+  height:10vw;
+  
+  .kakao_github {
+    position:absolute;
+    top:9vw;
+    left:14vw;
+    width:9vw;
+    height:9vw;
+    background-color:#2b2b2b;
+    border-radius:50%;
+    animation:radius2 29.4s linear infinite;
+    cursor: pointer;
+    &:hover > p:last-child {
+      opacity:1;
+    }
+    &:hover > p:first-child {
+      opacity:0;
+    }
+    p:first-child {
+      opacity:1;
+      display:flex;
+      position:absolute;
+      align-items:center;
+      left:5vw;
+      top:3vw;
+      font-size:1.2vw;
+      font-family: $font;
+      transition:$transition;
+      font-weight:600;
+      color:#fff;
+    }
+    p > img {
+      width:1.5vw;
+      height:1.5vw;
+    }
+    p:last-child {
+      opacity:0;
+      position:absolute;
+      right:25%;
+      top:38%;
+      font-size:1vw;
+      font-family: $font;
+      font-weight:600;
+      transition:$transition;
+      color:#e42320;
+    }
+  }
+}
+
+.kakao_content2 {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:90vw;
+  margin:0 auto 6%;
+  // border:1px solid red;
+  
+  .kakao_mockup {
+     position:relative;
+      width:70vw;
+      height:50vw;
+      // border:1px solid red;
+    .kakao_mockup_main {
+      position:absolute;
+      top:-9vw;
+      left:-13vw;
+      width:95vw;
+      height:75vw;
+    }
+
+    .kakao_login {
+      img {
+        position:absolute;
+        transform:rotate(-30deg);
+        top:18%;
+        left:17%;
+        width:14.5vw;
+        height:27vw;
+      }
+      .kakao_login_screen {
+        position:absolute;
+        transform:rotate(-30deg);
+        top:21.5%;
+        left:19.4%;
+        width:17%;
+        height:44.5%;
+        overflow:hidden;
+        border-bottom-left-radius:8px;
+        border-bottom-right-radius:10px;
+        // border:1px solid red;
+        video {
+          width:102%;
+          height:100%;
+          object-fit:fill;
+        }
+      }
+    }
+
+    .kakao_chatting {
+      img {
+        position:absolute;
+        transform:rotate(-30deg);
+        top:4%;
+        left:34.6%;
+        width:14.5vw;
+        height:27vw;
+      }
+      .kakao_chatting_screen {
+        position:absolute;
+        transform:rotate(-30deg);
+        top:7.8%;
+        left:37.1%;
+        width:17%;
+        height:44.5%;
+        overflow:hidden;
+        border-bottom-left-radius:8px;
+        border-bottom-right-radius:10px;
+        // border:1px solid red;
+
+        video {
+          width:102%;
+          height:100%;
+          object-fit:fill;
+        }
+      }
+    }
+
+    .kakao_profile {
+      img {
+        position:absolute;
+        transform:rotate(-30deg);
+        top:-10%;
+        left:52%;
+        width:14.5vw;
+        height:27vw;
+      }
+      .kakao_profile_screen {
+        position:absolute;
+        transform:rotate(-30deg);
+        top:-6.5%;
+        left:54.3%;
+        width:17.1%;
+        height:44.5%;
+        overflow:hidden;
+        border-bottom-left-radius:8px;
+        border-bottom-right-radius:10px;
+        // border:1px solid red;
+
+        video {
+          width:103.2%;
+          height:100%;
+          object-fit:fill;
+        }
+      }
+    }
+
+  } // kakao_mockup
+} // kakao_content2

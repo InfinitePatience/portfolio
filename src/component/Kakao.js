@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Kakao.scss';
 import Menu from './Menu';
+import kakao_login from '../video/kakao_login.mp4';
+import kakao_chatting from '../video/kakao_chatting.mp4';
+import kakao_profile from '../video/kakao_profile.mp4';
 
 function Kakao() {
   return (
@@ -37,6 +40,48 @@ function Kakao() {
         </span>
       </div>
     </div>
+    <div className='kakao_video'>
+      <div className='kakao_content'>
+        <Link target={'_blank'} to={'https://infinitepatience.github.io/kakao_react_2023/'} className='kakao_github'>
+        <p><img src={require("../images/github_img.png")} alt="github_image" />&nbsp;GitHub</p>
+        <p>CLICK !</p>
+        </Link>
+      </div> {/* // kakao_content */}
+      <div className='kakao_content2'>
+        <div className='kakao_mockup'>
+
+          <img src={require("../images/phone_group1.png")} alt="phone_image" className='kakao_mockup_main'/>
+
+          <div className='kakao_login'>
+            <img src={require("../images/iphone14.png")} alt="phone_image" />
+            <div className='kakao_login_screen'>
+              <video autoPlay loop muted preload>
+                <source src={kakao_login} type='video/mp4' />
+              </video>
+            </div>
+          </div>
+
+          <div className='kakao_chatting'>
+            <img src={require("../images/iphone14.png")} alt="phone_image" />
+            <div className='kakao_chatting_screen'>
+              <video autoPlay loop muted preload>
+                <source src={kakao_chatting} type='video/mp4' />
+              </video>
+            </div>
+          </div>
+
+          <div className='kakao_profile'>
+            <img src={require("../images/iphone14.png")} alt="phone_image" />
+            <div className='kakao_profile_screen'>
+              <video autoPlay loop muted preload>
+                <source src={kakao_profile} type='video/mp4' />
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>{/* // kakao_content2 */}
+    </div> {/* // kakao_video */}
     <div className='project_explanation'>
       <dl>
         <dt>프로젝트 개요<img src={require("../images/quote.png")} alt="" /></dt>

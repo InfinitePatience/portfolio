@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import '../styles/Samsung.scss'
 import Menu from './Menu'
 import Validation from './Validation';
+import samsung_main from '../video/samsung_main.mp4';
+import samsung_sub1 from '../video/samsung_sub1.mp4';
+import samsung_sub2 from '../video/samsung_sub2.mp4';
 
 function Samsung() {
   const [openvalid, setOpenValid] = useState(false);
@@ -49,37 +52,41 @@ function Samsung() {
         <div className='samsung_shortcuts_circle' onClick={validclick}>
           <p>VALIDATION</p>
           <p>CLICK !</p>
-        </div>   
-      </div> {/* // samsung_shortcuts */}
+        </div>
+        <Link target={'_blank'} to={'https://infinitepatience.github.io/samsung_renewal/'} className='samsung_github'>
+          <p><img src={require("../images/github_img.png")} alt="github_image" />&nbsp;GitHub</p>
+          <p>CLICK !</p>
+        </Link>
+      </div> {/* // samsung_content */}
       <div className='samsung_content2'>
         {openvalid && ( 
         <Validation setOpenValid={setOpenValid} className={samsung_validation}/>
         )}
         <div className='samsung_mockup'>
           <div className='samsung_pc'>
-            <img src={require('../images/pc.png')} alt="pc_image"/>
+            <img src={require('../images/pc_front.png')} alt="pc_image"/>
             <div className='samsung_pc_screen'>
-              {/* <video autoPlay loop muted preload>
-                <source src={davich} type="video/mp4" />
-              </video> */}
+              <video autoPlay loop muted preload>
+                <source src={samsung_main} type="video/mp4" />
+              </video>
             </div>
           </div>
 
-          <div className='samsung_tablet'>
-            <img src={require('../images/pc.png')} alt="tablet_image"/>
-            <div className='samsung_tablet_screen'>
-              {/* <video autoPlay loop muted preload>
-                <source src={davich_tablet} type="video/mp4" />
-              </video> */}
+          <div className='samsung_left'>
+            <img src={require('../images/pc_left.png')} alt="tablet_image"/>
+            <div className='samsung_left_screen'>
+              <video autoPlay loop muted preload>
+                <source src={samsung_sub1} type="video/mp4" />
+              </video>
             </div>
           </div>
 
-          <div className='samsung_mobile'>
-            <img src={require('../images/pc.png')} alt="mobile_image"/>
-            <div className='samsung_mobile_screen'>
-              {/* <video autoPlay loop muted preload>
-                <source src={davich_mobile} type="video/mp4" />
-              </video> */}
+          <div className='samsung_right'>
+            <img src={require('../images/pc_right.png')} alt="mobile_image"/>
+            <div className='samsung_right_screen'>
+              <video autoPlay loop muted preload>
+                <source src={samsung_sub2} type="video/mp4" />
+              </video>
             </div>
           </div>
         </div> {/* // samsung_mockup */}

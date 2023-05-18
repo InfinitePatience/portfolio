@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Cjone.scss';
 import Menu from './Menu';
+import Validation from './Validation';
+import cjone_pc from '../video/cjone_pc.mp4';
+import cjone_tablet from '../video/cjone_tablet.mp4';
+import cjone_mobile from '../video/cjone_mobile.mp4';
 
 function Cjone() {
+  const [openvalid, setOpenValid] = useState(false);
+
+  const validclick = () => {
+    setOpenValid((prev) => !prev);
+  }
+
+  const cjone_validation = "cjone_validation"
+
   return (
     <>
     <div className='project_container'>
@@ -35,6 +47,51 @@ function Cjone() {
         </span>
       </div>
     </div>
+    <div className='cjone_video'>
+      <div className='cjone_content'>
+        <div className='cjone_shortcuts_circle' onClick={validclick}>
+          <p>VALIDATION</p>
+          <p>CLICK !</p>
+        </div>
+        <Link target={'_blank'} to={'https://infinitepatience.github.io/CJONE_project/'} className='cjone_github'>
+          <p><img src={require("../images/github_img.png")} alt="github_image" />&nbsp;GitHub</p>
+          <p>CLICK !</p>
+        </Link>
+      </div> {/* // cjone_content */}
+      <div className='cjone_content2'>
+        {openvalid && ( 
+        <Validation setOpenValid={setOpenValid} className={cjone_validation}/>
+        )}
+        <div className='cjone_mockup'>
+          <div className='cjone_pc'>
+            <img src={require('../images/pc.png')} alt="pc_image"/>
+            <div className='cjone_pc_screen'>
+              <video autoPlay loop muted preload>
+                <source src={cjone_pc} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div className='cjone_tablet'>
+            <img src={require('../images/ipad.png')} alt="tablet_image"/>
+            <div className='cjone_tablet_screen'>
+              <video autoPlay loop muted preload>
+                <source src={cjone_tablet} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div className='cjone_mobile'>
+            <img src={require('../images/iphone14.png')} alt="mobile_image"/>
+            <div className='cjone_mobile_screen'>
+              <video autoPlay loop muted preload>
+                <source src={cjone_mobile} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div> {/* // cjone_mockup */}
+      </div> {/* // cjone_content */}
+    </div> {/* // cjone_video */}
     <div className='project_explanation'>
       <dl>
         <dt>프로젝트 개요<img src={require("../images/quote.png")} alt="" /></dt>

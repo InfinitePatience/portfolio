@@ -6,7 +6,10 @@ import Introduction from '../component/Introduction';
 import Menu from '../component/Menu';
 
 function Main() {
-
+  // const shortcuts = useRef();
+  // const onMove = () => {
+  //   shortcuts.current.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  // };
 
   return (
     <>
@@ -24,7 +27,7 @@ function Main() {
             <h1>BY SEUNG JU LEE.<br />WELCOME TO<br />MY SITE.</h1>
           </div>
         </div>
-          <div className='main_contact_shortcuts'>
+          <div className='main_contact_shortcuts' /* onClick={onMove} */>
             <button><span><img src={require("../images/contact_button-01.png")} alt="contact_image"/></span></button>
             <span>SHORT <br />CUTS</span>
           </div>
@@ -134,7 +137,7 @@ function Main() {
         </div> {/* //bottom */}
       </div>  {/* //container */}
       <Introduction />
-      <Contact />
+      <Contact /* ref={shortcuts} */ />
     </div>
     </>
   )

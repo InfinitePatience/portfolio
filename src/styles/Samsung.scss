@@ -1,3 +1,7 @@
+$transition:all 0.2s ease 0s;
+$font:'Inter', sans-serif;
+
+
 .detail_samsung {
   // border:1px solid blue;
   position:absolute;
@@ -113,15 +117,14 @@
     // mockup (목업)
     .samsung_content2 {
       width:82vw;
-      
+      // border:1px solid red;
     }
     
     .samsung_video {
-      width:90vw;
-      margin:5% auto 12%;
-      // border:1px solid red;
       position:relative;
-      left:3%;
+      margin:5% auto 7%;
+      width:90vw;
+      // border:1px solid red;
     
       .samsung_mockup {
         opacity:1;
@@ -137,14 +140,16 @@
         display:flex;
         justify-content:center;
         img {
-          width:30vw;
-          height:22vw;
+          
+          width:36vw;
+          height:28vw;
         }
         .samsung_pc_screen {
           position:absolute;
-          top:4%;
-          width:46.5%;
-          height:61%;
+          left:31.55%;
+          top:11%;
+          width:38%;
+          height:53%;
           // border:1px solid red;
           &:after {
             position:absolute;
@@ -153,41 +158,42 @@
             left:0;
             width:100%;
             height:100%;
-            box-shadow:inset 1px 1px 9px rgba(0,0,0,0.7);
+            box-shadow:inset 1px 1px 20px rgba(0,0,0,0.5);
           }
-    
     
           video {
             width:100%;
             height:100%;
-            object-fit:cover;
+            object-fit:fill;
           }
         }
       }
     
-      .samsung_tablet {
+      .samsung_left {
         z-index:1;
         // margin-bottom:3vw;
         perspective:600px;
         perspective-origin:50% 50%;
         transform:translateX(-9vw) translateY(-21.875vw);
         img {
-          transform:translateZ(-3vw) rotateY(-11deg);
+          transform:translateZ(-3vw) rotateY(-20deg);
           transform-style:preserve-3d;
           position:absolute;
-          top:31.4%;
-          left:5%;
-          width:30vw;
-          height:22vw;
+          top:-4.5vw;
+          left:2vw;
+          width:34vw;
+          height:26vw;
         }
-        .samsung_tablet_screen {
+        .samsung_left_screen {
+          transform:translateZ(-3vw) rotateY(-20deg) translateY(2vw);
+          transform-style:preserve-3d;
           position:absolute;
-          top:54.5%;
-          left:7.4%;
-          width:30.8%;
-          height:43%;
+          top:-3.5vw;
+          left:4.6vw;
+          width:29.5vw;
+          height:13.7vw;
           overflow:hidden;
-          border-radius:8px;
+          // border-radius:8px;
           // border:1px solid red;
     
           &:after {
@@ -208,29 +214,40 @@
         }
       }
     
-      .samsung_mobile {
+      .samsung_right {
         z-index:1;
         // margin-bottom:3vw;
         perspective:600px;
         perspective-origin:50% 50%;
         transform:translateX(19vw) translateY(-21.875vw);
         img {
-          transform:translateZ(-3vw) rotateY(11deg);
+          transform:translateZ(-3vw) rotateY(19deg);
           transform-style:preserve-3d;
           position:absolute;
-          top:31.4%;
-          right:17%;
-          width:30vw;
-          height:22vw;
+          top:-4vw;
+          right:11vw;
+          width:33vw;
+          height:25vw;
         }
-        .samsung_mobile_screen {
+        .samsung_right_screen {
+          transform:translateZ(-3vw) rotateY(19deg) translateX(3vw);
+          transform-style:preserve-3d;
           position:absolute;
-          top:19.5%;
-          right:17.68%;
-          width:11.85%;
-          height:46%;
+          top:-1.7vw;
+          right:14.85vw;
+          width:31.2vw;
+          height:14.6vw;
           overflow:hidden;
           // border:1px solid red;
+          &:after {
+            position:absolute;
+            content:'';
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            box-shadow:inset 1px 1px 9px rgba(0,0,0,0.7);
+          }
     
           video {
             width:103.2%;
@@ -252,13 +269,7 @@
       width:10vw;
       height:10vw;
       // border:1px solid red;
-    
-      &:hover > .samsung_shortcuts_circle > p:last-child {
-        opacity:1;
-      }
-      &:hover > .samsung_shortcuts_circle > p:first-child {
-        opacity:0;
-      }
+
       .samsung_shortcuts_circle {
         position:relative;
         width:9vw;
@@ -267,15 +278,22 @@
         border-radius:50%;
         animation: radius 30s linear infinite;
         transform-origin: 13px 25px;
+
+        &:hover> p:last-child {
+          opacity:1;
+        }
+        &:hover> p:first-child {
+          opacity:0;
+        }
         p:first-child{
           opacity:1;
           position:absolute;
           right:-15%;
           top:35%;
           font-size:1.2vw;
-          font-family: 'Inter', sans-serif;
+          font-family: $font;
           font-weight:600;
-          transition:all 0.5s ease 0s;
+          transition:transition;
           color:#fff;
         }
         p:last-child{
@@ -284,9 +302,55 @@
           right:25%;
           top:38%;
           font-size:1vw;
-          font-family: 'Inter', sans-serif;
+          font-family: $font;
           font-weight:600;
-          transition:all 0.5s ease 0s;
+          transition:transition;
+          color:#e42320;
+        }
+      }
+
+      .samsung_github {
+        position:absolute;
+        left:15vw;
+        width:9vw;
+        height:9vw;
+        background-color:#2b2b2b;
+        border-radius:50%;
+        animation:radius2 29.4s linear infinite;
+        cursor: pointer;
+        &:hover > p:last-child {
+          opacity:1;
+        }
+        &:hover > p:first-child {
+          opacity:0;
+        }
+        
+        p:first-child {
+          opacity:1;
+          display:flex;
+          position:absolute;
+          align-items:center;
+          left:5vw;
+          top:3vw;
+          font-size:1.2vw;
+          font-family: $font;
+          transition:$transition;
+          font-weight:600;
+          color:#fff;
+        }
+        p > img {
+          width:1.5vw;
+          height:1.5vw;
+        }
+        p:last-child {
+          opacity:0;
+          position:absolute;
+          right:25%;
+          top:38%;
+          font-size:1vw;
+          font-family: $font;
+          font-weight:600;
+          transition:$transition;
           color:#e42320;
         }
       }
@@ -314,4 +378,27 @@
     90% { border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%; }
     95% { border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%; }
     100%{ border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+}
+@keyframes radius2 {
+  0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+  5%  { border-radius: 50% 52% 41% 59% / 66% 37% 63% 34%; }
+  10% { border-radius: 41% 31% 71% 29% / 67% 31% 69% 33%; }
+  15% { border-radius: 45% 40% 71% 29% / 63% 65% 35% 37%; }
+  20% { border-radius: 52% 39% 51% 49% / 57% 58% 42% 43%; }
+  25% { border-radius: 55% 34% 25% 75% / 47% 30% 70% 53%; }
+  30% { border-radius: 60% 68% 38% 62% / 65% 60% 40% 35%; }
+  35% { border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%; }
+  40% { border-radius: 61% 43% 49% 51% / 55% 71% 29% 45%; }
+  45% { border-radius: 57% 53% 34% 66% / 65% 36% 64% 35%; }
+  50% { border-radius: 63% 56% 32% 68% / 69% 26% 74% 31%; }
+  55% { border-radius: 67% 72% 37% 63% / 71% 44% 56% 29%; }    
+  60% { border-radius: 71% 62% 35% 65% / 74% 53% 47% 26%; }
+  65% { border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%; }
+  70% { border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%; }
+  75% { border-radius: 78% 38% 43% 57% / 55% 60% 40% 45%; }
+  80% { border-radius: 74% 59% 65% 35% / 73% 50% 50% 27%; }
+  85% { border-radius: 68% 45% 57% 43% / 73% 61% 39% 27%; }
+  90% { border-radius: 64% 26% 33% 67% / 40% 65% 35% 60%; }
+  95% { border-radius: 59% 42% 57% 43% / 53% 45% 55% 47%; }
+  100%{ border-radius: 52% 52% 68% 32% / 42% 28% 72% 58%; }
 }

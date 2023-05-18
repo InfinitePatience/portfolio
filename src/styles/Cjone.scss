@@ -1,3 +1,6 @@
+$transition:all 0.2s ease 0s;
+$font:'Inter', sans-serif;
+
 .detail_cjone {
   // border:1px solid blue;
   position:absolute;
@@ -39,7 +42,7 @@
         z-index:-2;
         position:absolute;
         right:15vw;
-        bottom:-2vw;
+        bottom:7vw;
         width:19vw;
         min-width:192px;
         height:19vw;
@@ -74,7 +77,7 @@
       .border_cjone2 {
         z-index:-1;
         position:absolute;
-        bottom:-8vw;
+        bottom:2vw;
         right:3vw;
         width:18vw;
         min-width:192px; // 10vw
@@ -107,3 +110,268 @@
         }
       }
     }
+
+    // mockup (목업)
+.cjone_content2 {
+  width:90vw;
+}
+
+.cjone_video {
+  width:90vw;
+
+  margin:5% auto 5%;
+  // border:1px solid red;
+  position:relative;
+  left:3%;
+
+  .cjone_mockup {
+    opacity:1;
+    transition: all 1s ease 0s;
+    animation:opacity 1s ease 0s;
+
+  @keyframes opacity {
+    from{opacity:1;}
+    to{opacity:0;}
+  }
+  .cjone_pc {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    img {
+      width:42vw;
+      height:34vw;
+    }
+    .cjone_pc_screen {
+      position:absolute;
+      top:4%;
+      width:46.5%;
+      height:61%;
+      // border:1px solid red;
+      &:after {
+        position:absolute;
+        content:'';
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        box-shadow:inset 1px 1px 9px rgba(0,0,0,0.7);
+      }
+      video {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+    }
+  }
+
+  .cjone_tablet {
+    z-index:1;
+    // margin-bottom:3vw;
+    img {
+      position:absolute;
+      top:50%;
+      left:5%;
+      width:32vw;
+      height:23vw;
+    }
+    .cjone_tablet_screen {
+      position:absolute;
+      top:54.5%;
+      left:7.4%;
+      width:30.8%;
+      height:43%;
+      overflow:hidden;
+      border-radius:8px;
+      // border:1px solid red;
+
+      &:after {
+        position:absolute;
+        content:'';
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        box-shadow:inset 1px 1px 9px rgba(0,0,0,0.7);
+      }
+
+      video {
+        width:100%;
+        height:100%;
+        object-fit:fill;
+      }
+    }
+  }
+
+  .cjone_mobile {
+    z-index:1;
+    // margin-bottom:3vw;
+    img {
+      position:absolute;
+      top:15%;
+      right:17%;
+      width:13vw;
+      height:25vw;
+    }
+    .cjone_mobile_screen {
+      position:absolute;
+      top:19.5%;
+      right:17.67%;
+      width:11.85%;
+      height:46%;
+      overflow:hidden;
+      // border:1px solid red;
+
+      video {
+        width:103.2%;
+        height:100%;
+        object-fit:fill;
+      }
+    }
+  }
+  }
+}
+
+// click botton(유효성검사 바로가기 버튼, git hub 버튼)
+.cjone_content {
+  position:relative;
+  left:5%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:10vw;
+  height:10vw;
+  
+  .cjone_shortcuts_circle {
+    position:relative;
+    width:9vw;
+    height:9vw;
+    background-color:#2b2b2b;
+    border-radius:50%;
+    animation: radius 30.3s linear infinite;
+    transform-origin: 13px 25px;
+    cursor: pointer;
+
+    &:hover> p:last-child {
+      opacity:1;
+    }
+    &:hover> p:first-child {
+      opacity:0;
+    }
+      p:first-child{
+        opacity:1;
+        position:absolute;
+        right:-15%;
+        top:35%;
+        font-size:1.2vw;
+        font-family: $font;
+        font-weight:600;
+        transition:$transition;
+        color:#fff;
+      }
+      p:last-child{
+        opacity:0;
+        position:absolute;
+        right:25%;
+        top:38%;
+        font-size:1vw;
+        font-family: $font;
+        font-weight:600;
+        transition:$transition;
+        color:#e42320;
+      }
+  }
+
+  .cjone_github {
+    position:absolute;
+    left:15vw;
+    width:9vw;
+    height:9vw;
+    background-color:#2b2b2b;
+    border-radius:50%;
+    animation:radius2 29.4s linear infinite;
+    cursor: pointer;
+    &:hover > p:last-child {
+      opacity:1;
+    }
+    &:hover > p:first-child {
+      opacity:0;
+    }
+    
+    p:first-child {
+      opacity:1;
+      display:flex;
+      position:absolute;
+      align-items:center;
+      left:5vw;
+      top:3vw;
+      font-size:1.2vw;
+      font-family: $font;
+      transition:$transition;
+      font-weight:600;
+      color:#fff;
+    }
+    p > img {
+      width:1.5vw;
+      height:1.5vw;
+    }
+    p:last-child {
+      opacity:0;
+      position:absolute;
+      right:25%;
+      top:38%;
+      font-size:1vw;
+      font-family: $font;
+      font-weight:600;
+      transition:$transition;
+      color:#e42320;
+    }
+  }
+
+}
+// 유효성검사 클릭 원형 애니메이션
+@keyframes radius {
+    0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+    5%  { border-radius: 48% 56% 41% 59% / 66% 37% 63% 34%; }
+    10% { border-radius: 69% 49% 71% 29% / 54% 31% 49% 33%; }
+    15% { border-radius: 60% 45% 64% 29% / 63% 65% 35% 37%; }
+    20% { border-radius: 61% 36% 51% 49% / 57% 58% 42% 43%; }
+    25% { border-radius: 66% 35% 25% 75% / 47% 30% 70% 53%; }
+    30% { border-radius: 32% 58% 38% 62% / 65% 60% 40% 35%; }
+    35% { border-radius: 63% 37% 41% 59% / 35% 38% 52% 65%; }
+    40% { border-radius: 57% 31% 49% 51% / 55% 71% 29% 45%; }
+    45% { border-radius: 47% 24% 34% 58% / 62% 36% 64% 35%; }
+    50% { border-radius: 44% 15% 32% 68% / 68% 58% 74% 31%; }
+    55% { border-radius: 28% 28% 37% 63% / 61% 44% 56% 29%; }    
+    60% { border-radius: 38% 33% 35% 65% / 71% 53% 47% 26%; }
+    65% { border-radius: 73% 40% 46% 54% / 54% 47% 53% 46%; }
+    70% { border-radius: 80% 46% 38% 53% / 49% 53% 47% 51%; }
+    75% { border-radius: 62% 38% 43% 57% / 55% 60% 42% 45%; }
+    80% { border-radius: 41% 47% 65% 35% / 73% 50% 50% 27%; }
+    85% { border-radius: 55% 58% 57% 43% / 73% 61% 39% 27%; }
+    90% { border-radius: 74% 39% 33% 67% / 40% 55% 35% 60%; }
+    95% { border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%; }
+    100%{ border-radius: 48% 51% 68% 32% / 42% 28% 67% 58%; }
+}
+@keyframes radius2 {
+  0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+  5%  { border-radius: 50% 52% 41% 59% / 66% 37% 63% 34%; }
+  10% { border-radius: 41% 31% 71% 29% / 67% 31% 69% 33%; }
+  15% { border-radius: 45% 40% 71% 29% / 63% 65% 35% 37%; }
+  20% { border-radius: 52% 39% 51% 49% / 57% 58% 42% 43%; }
+  25% { border-radius: 55% 34% 25% 75% / 47% 30% 70% 53%; }
+  30% { border-radius: 60% 68% 38% 62% / 65% 60% 40% 35%; }
+  35% { border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%; }
+  40% { border-radius: 61% 43% 49% 51% / 55% 71% 29% 45%; }
+  45% { border-radius: 57% 53% 34% 66% / 65% 36% 64% 35%; }
+  50% { border-radius: 63% 56% 32% 68% / 69% 26% 74% 31%; }
+  55% { border-radius: 67% 72% 37% 63% / 71% 44% 56% 29%; }    
+  60% { border-radius: 71% 62% 35% 65% / 74% 53% 47% 26%; }
+  65% { border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%; }
+  70% { border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%; }
+  75% { border-radius: 78% 38% 43% 57% / 55% 60% 40% 45%; }
+  80% { border-radius: 74% 59% 65% 35% / 73% 50% 50% 27%; }
+  85% { border-radius: 68% 45% 57% 43% / 73% 61% 39% 27%; }
+  90% { border-radius: 64% 26% 33% 67% / 40% 65% 35% 60%; }
+  95% { border-radius: 59% 42% 57% 43% / 53% 45% 55% 47%; }
+  100%{ border-radius: 52% 52% 68% 32% / 42% 28% 72% 58%; }
+}

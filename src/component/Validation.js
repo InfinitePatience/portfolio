@@ -23,9 +23,9 @@ function Validation(props) {
     )}
     {props.className === 'cjone_validation' && (
     <div className='cjone_validation validation'>
-      <img src={require('../images/다비치 CSS 검사결과.png')} alt="" />
-      <img src={require('../images/다비치 HTML 검사결과.png')} alt="" />
-      <img src={require('../images/다비치 Lighthouse 검사결과.PNG')} alt="" />
+      <img src={require('../images/CJONE W3C CSS 검사 결과.png')} alt="" />
+      <img src={require('../images/CJONE HTML 검사 결과.png')} alt="" />
+      <img src={require('../images/CJONE Lighthouse 검사결과.PNG')} alt="" />
     </div>
     )}
   </>
