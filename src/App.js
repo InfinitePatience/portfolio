@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Project from './component/Project';
+import Main from './routes/Main';
+import Samsung from './component/Samsung';
+import Cjone from './component/Cjone';
+import Netflix from './component/Netflix';
+import Kakao from './component/Kakao';
+import Pure from './component/Pure';
+import Menu from './component/Menu';
+import Cover from './component/Cover';
+
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+    <Routes>
+      <Route path='/portfolio' element={<Cover />}/>
+      <Route path='/' element={<Main />}/>
+      <Route path='/Menu' element={<Menu />}/>
+      <Route path='/Project' element={<Project />}/>
+      <Route path='/Samsung' element={<Samsung />}/>
+      <Route path='/Cjone' element={<Cjone />}/>
+      <Route path='/Netflix' element={<Netflix />}/>
+      <Route path='/Kakao' element={<Kakao />}/>
+      <Route path='/Pure' element={<Pure />}/>
+    </Routes>
+   </BrowserRouter>
   );
 }
 

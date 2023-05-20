@@ -1,0 +1,47 @@
+.cover_container {
+  max-width: 100%;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  color:#fff;
+
+  .cover_content {
+    opacity:0.2;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+    margin:3vw 0;
+
+    p {
+      display: inline-block;
+    }
+  }
+  .cover_content2 {
+    opacity:0.2;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marque 30s linear infinite;
+
+    p {
+      display: inline-block;
+    }
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marque {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
