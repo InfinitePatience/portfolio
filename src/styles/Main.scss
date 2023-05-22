@@ -54,8 +54,8 @@ $projectcolor6:#c783FF;
         left:22vw;
         top:12vw; 
         width:22vw;
-        height:22vw;
-        // border:1px solid red;
+        height:21vw;
+        border:1px solid red;
 
         &:hover > button > span > img{
           animation:contact 12s linear infinite;
@@ -68,12 +68,13 @@ $projectcolor6:#c783FF;
 
         button {
           display:block;
-          margin:5vw;
+          margin:4vw;
           width:15vw;
           height:15vw;
           border-radius:50%;
           background-color:#2b2b2b;
           border:none;
+          cursor:pointer;
 
           span {
             img {
@@ -85,16 +86,17 @@ $projectcolor6:#c783FF;
         }
         span:nth-child(2) {
           position:absolute;
-          top:11vw;
-          left:12vw;
+          top:10.5vw;
+          left:11.5vw;
           font-size:0.8vw;
           font-family: 'Inter', sans-serif;
           font-weight:600;
           color:#fff;
           transition:all 0.2s linear 0s;
+          cursor:pointer;
         }
       }
-  }
+   }
 }
 @keyframes contact {
   0% {transform:rotate(0deg);}

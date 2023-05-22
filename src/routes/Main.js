@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../styles/Main.scss';
 import { Link } from 'react-router-dom';
 import Contact from '../component/Contact';
@@ -6,15 +6,7 @@ import Introduction from '../component/Introduction';
 import Menu from '../component/Menu';
 
 function Main() {
-  
-  const shortcuts = useRef();
-  console.log('sdgfdhdfh',shortcuts)
-  const onMove = () => {
-    window.scroll({
-      top: shortcuts.current.scrollTop,
-      behavior:'smooth'
-    })
-  };
+
 
 // 메인 화면 글씨 3d
 const cardRef = useRef(null);
@@ -261,24 +253,47 @@ const handleMouseLeave6 = () => {
   subtitle6_1.style.transform = `translate3d(0,0,0)`
 };
 
+const introref = useRef();
+const contactref = useRef();
+
+const introScroll = () => {
+  const introElement = introref.current;
+  const introOffsetTop = introElement.offsetTop;
+  
+  window.scroll({
+    top: introOffsetTop,
+    behavior:'smooth'
+  });
+};
+const contactScroll = () => {
+  const contactElement = contactref.current;
+  const contactOffsetTop = contactElement.offsetTop;
+  
+  window.scroll({
+    top: contactOffsetTop,
+    behavior:'smooth'
+  });
+};
+
+
   return (
     <>
     <div>
       <div className='main_logo'>
         <Link to="/"><img src={require("../images/portfolio_logo_white.png")} alt="" /></Link>
-        <Menu />
+        <Menu introScroll={introScroll}/>
       </div>
       <div className='main_container'>
-        
         <div className='main_top'>
         <div className='main_title'>
           <div>
             <h1>BY SEUNG JU LEE.<br />WELCOME TO<br />MY SITE.</h1>
           </div>
         </div>
-          <div className='main_contact_shortcuts' onClick={onMove}>
-            <button><span><img src={require("../images/contact_button-01.png")} alt="contact_image"/></span></button>
-            <span>SHORT <br />CUTS</span>
+          <div className='main_contact_shortcuts' >
+            
+            <button onClick={contactScroll}><span><img src={require("../images/contact_button-01.png")} alt="contact_image"/></span></button>
+            <span onClick={contactScroll}>SHORT<br />CUTS</span>
           </div>
 
           <div className='index_per' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
@@ -400,9 +415,11 @@ const handleMouseLeave6 = () => {
 
         </div> {/* //bottom */}
       </div>  {/* //container */}
-      <Introduction />
-      <div className='contact' ref={shortcuts}>
-      <Contact  />
+        <div className='introduction' ref={introref}>
+          <Introduction />
+        </div>
+      <div className='contact' ref={contactref}>
+      <Contact />
       </div>
     </div>
     </>

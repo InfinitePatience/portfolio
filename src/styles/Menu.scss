@@ -168,10 +168,10 @@
       font-weight:600;
       color:#fff;
     }
-    div > ul > li > a {
+    div > ul > li, div > ul > li > a {
       font-size:1.3vw;
       color:#fff;
-
+      cursor:pointer;
       &:hover {
         color:#f00;
       }
