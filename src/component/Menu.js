@@ -13,14 +13,19 @@ function Menu({color}) {
   const modaltoggle = () => {
     setModal((prev) => !prev)
     menuRef.current.classList.toggle('on');
-    // document.body.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden'
   };
   
   const modaloutclick = () => {
     menuRef.current.classList.remove('on');
-    document.body.style.overflow = 'auto'
+    document.body.style.overflow ='auto'
     setModal(false);
   };
+  // const modaloutclick2 = () => {
+  //   menuRef.current.classList.remove('on');
+  //   document.body.style.overflow = 'auto'
+  //   setModal(false);
+  // };
 
   const oncloseclick = () => {
     document.body.style.overflow = 'auto'
