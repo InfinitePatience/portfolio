@@ -1,0 +1,182 @@
+.nav_container {
+  position:absolute;
+  // border:1px solid red;
+.nav_inner {
+  position:relative;
+  // border:1px solid red;
+
+
+  .nav_btn {
+    z-index:10;
+    overflow: hidden;
+    position:absolute;
+    top:-4vw;
+    right:-90vw;
+    background-color:#2b2b2b;
+    width:3.5vw;
+    height:3.5vw;
+    font-size:0.9vw;
+    font-weight:600;
+    border-radius:50%;
+    cursor: pointer;
+    // border:1px solid red;
+
+    &.on {
+      .menu_txt {
+        .menu {
+          opacity:0;
+        }
+        .close {
+          opacity:1;
+        }
+
+      }
+      .ham_btn {
+        .ham_btn1 {
+          left:0.9vw;
+          width:1.6vw;
+          top:1vw;
+          transform:rotate(45deg);
+        }
+        .ham_btn2 {
+          opacity:0;
+          width:0;
+          transition:all 0.3s ease 0s; 
+        }
+        .ham_btn3 {
+          left:0.9vw;
+          width:1.6vw;
+          top:1vw;
+          transform:rotate(-45deg);
+        }
+      }
+    }
+
+    .menu_txt {
+      position:absolute;
+      left:0.8vw;
+      bottom:0.5vw;
+      font-size:0.7vw;
+      color:#fff;
+      
+      .menu {
+        opacity:1;
+        top:-10vw;
+        transition:all 1s ease 0s;
+        
+      }
+      .close {
+        position:absolute;
+        opacity:0;
+        left:0.2vw;
+        transition:all 1s ease 0s;
+      }
+    }
+    
+    .ham_btn {
+      position: relative;
+    
+    .ham_btn1 {
+      position: absolute;
+      border:1px solid #fff;
+      width:0.8vw;
+      left:1.1vw;
+      top:0.5vw;
+      transition:all 0.5s ease 0s;
+    }
+    .ham_btn2 {
+      position: absolute;
+      border:1px solid #fff;
+      width:1.6vw;
+      left:1.1vw;
+      top:1vw;
+      transition:all 0.3s linear 0s; 
+    }
+    .ham_btn3 {
+      position: absolute;
+      border:1px solid #fff;
+      width:1.2vw;
+      left:1.1vw;
+      top:1.5vw;
+      transition:all 0.5s ease 0s;
+    }
+      } // ham_btn
+
+    // &:hover > .ham_btn > .ham_btn1 { 
+    //   width:1.6vw; 
+    // }
+    // &:hover > .ham_btn > .ham_btn3 {
+    //   width:1.6vw;
+    // }
+
+   } // nav_btn
+  } // nav_inner
+} // nav_container
+
+@keyframes menu {
+  0% {transform:rotate(0deg); transition:all 0.5s ease 0s;}
+  100% {transform:rotate(45deg);}
+}
+
+//모달창
+.modal_container {
+  z-index:1;
+  position:absolute;
+  left:25vw;
+  top:50%;
+  // border:1px solid blueviolet;
+  width:1vw;
+  height:1vw;
+ 
+  .modal_outside{
+    position:absolute;
+    left:-30vw;
+    top:-6vw;
+    width:101vw;
+    height:100vw;
+    background-color:rgba(0,0,0,0.5);
+  }
+
+.modal_inner {
+  position:absolute;
+  border-radius:50%;
+  top:20.5vw;
+  left:20vw;
+  transform:translateY(-50%) translateX(-50%);
+  overflow:hidden;
+
+  background-color:#202020;
+  animation:modal 0.5s ease 0s;
+  animation-fill-mode: forwards; // 마지막 프레임 유지
+
+  @keyframes modal {
+    from {width:0vw; height:0vw;}
+    to {width:40vw; height:40vw;}
+  }
+
+
+  .modal_content {
+    position:absolute;
+    left:50%;
+    top:10%;
+    transform:translate(-50%);
+
+    div > span{
+      position:relative;
+      left:15%;
+      font-size:4vw;
+      font-weight:600;
+      color:#fff;
+    }
+    div > ul > li > a {
+      font-size:1.3vw;
+      color:#fff;
+
+      &:hover {
+        color:#f00;
+      }
+    }
+  }
+}
+} 
+

@@ -1,0 +1,12 @@
+*{margin:0; padding:0;}
+html,body{}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.blind{display:none;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+/* font-family: 'IBM Plex Sans KR', sans-serif; */

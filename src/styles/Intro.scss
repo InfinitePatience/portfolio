@@ -1,0 +1,108 @@
+.intro_container { 
+  width:90vw;
+  margin:4.16vw auto;
+  // border:1px solid red;
+
+
+  .intro_title {
+    color:#fff;
+    p {
+      margin-bottom:4vw;
+      font-size:7vw;
+      font-family: 'Inter', sans-serif;
+      font-weight:600;
+    }
+  }
+
+  .intro_name {
+    position:absolute;
+    display:flex;
+    gap:100px;
+  }
+  
+
+
+  .intro_content {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:5.5vw;
+
+  .intro_picture {
+    ul {
+      li:first-of-type {
+        font-size:2.8vw;
+        font-weight:600;
+        text-align:center;
+        color:#fff;
+
+        p {
+          margin-bottom:1.5vw;
+        };
+      }
+
+      li:last-of-type {
+        img {
+        width:15vw;
+        height:15vw;
+        }
+      }
+    }
+
+  }
+
+  .intro_skill {
+    ul { 
+
+      li > p{
+        width:25vw;
+        font-size:2vw;
+        font-weight:600;
+        color:#fff;
+      }
+      li:nth-of-type(even) {
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        gap:1.5vw;
+        margin-top:0.8vw;
+        margin-bottom:2vw;
+
+        img {
+          width:2.8vw;
+          height:2.8vw;
+        }
+      }
+    }
+  }
+}
+}
+
+.intro_content2 {
+  .intro_education {
+    margin-bottom:7vw;
+    dl{
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      dt{
+        color:#fff;
+        font-size:2vw;
+        font-weight:600;
+      }
+      dd {
+        color:#fff;
+        font-size:1.5vw;
+      }
+    }
+  }
+
+  .intro_text {
+    p {
+      
+      font-size:1.5vw;
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight:600;
+      line-height:3vw;
+      color:#e9e9e9;
+    }
+  }
+}
