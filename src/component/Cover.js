@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../styles/Cover.scss';
 
@@ -8,12 +8,16 @@ function Cover() {
   
   setTimeout(function() {
     navigate('/');
-  }, [2000]);
+  }, [5000]);
+  
 
   return (
     <>
     <div className='cover_container'>
-      <div className='cover_content'>
+      <div data-text="Seung Ju's PORTFOLIO" className='cover_intro'> 
+        <span>Seung Ju's PORTFOLIO</span>
+    </div>
+      <div className='cover_content' >
         <p>STYLISH &emsp; &emsp; &emsp; VIDEO &emsp; &emsp; &emsp; BIG DATA &emsp; &emsp; &emsp;
         UI/UX &emsp; &emsp; &emsp; TECHNICAL &emsp;&emsp; &emsp; REACT &emsp; &emsp; &emsp; IMPRESSIVE
         &emsp; &emsp; &emsp; DYNAMIC WEBSITE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
@@ -50,10 +54,10 @@ function Cover() {
         <p>
           STYLISH &emsp; &emsp; &emsp; VIDEO &emsp; &emsp; &emsp; BIG DATA &emsp; &emsp; &emsp;
           UI/UX &emsp; &emsp; &emsp; TECHNICAL &emsp;&emsp; &emsp; REACT &emsp; &emsp; &emsp; IMPRESSIVE
-          &emsp; &emsp; &emsp; DYNAMIC WEBSITE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
+          &emsp; &emsp; &emsp; RESPONSIVE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
           &emsp; &emsp; &emsp; ANIMATION &emsp; &emsp; &emsp; JAVASCRIPT &emsp; &emsp; &emsp; COMPONENT &emsp; &emsp; &emsp;STYLISH &emsp; &emsp; &emsp; VIDEO &emsp; &emsp; &emsp; BIG DATA &emsp; &emsp; &emsp;
           UI/UX &emsp; &emsp; &emsp; TECHNICAL &emsp;&emsp; &emsp; REACT &emsp; &emsp; &emsp; IMPRESSIVE
-          &emsp; &emsp; &emsp; DYNAMIC WEBSITE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
+          &emsp; &emsp; &emsp; RESPONSIVE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
           &emsp; &emsp; &emsp; ANIMATION &emsp; &emsp; &emsp; JAVASCRIPT &emsp; &emsp; &emsp; COMPONENT &emsp; &emsp; &emsp;
           </p>
       </div>
@@ -116,10 +120,10 @@ function Cover() {
         <p>
           STYLISH &emsp; &emsp; &emsp; VIDEO &emsp; &emsp; &emsp; BIG DATA &emsp; &emsp; &emsp;
           UI/UX &emsp; &emsp; &emsp; TECHNICAL &emsp;&emsp; &emsp; REACT &emsp; &emsp; &emsp; IMPRESSIVE
-          &emsp; &emsp; &emsp; DYNAMIC WEBSITE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
+          &emsp; &emsp; &emsp; PORTFOLIO &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
           &emsp; &emsp; &emsp; ANIMATION &emsp; &emsp; &emsp; JAVASCRIPT &emsp; &emsp; &emsp; COMPONENT &emsp; &emsp; &emsp;STYLISH &emsp; &emsp; &emsp; VIDEO &emsp; &emsp; &emsp; BIG DATA &emsp; &emsp; &emsp;
           UI/UX &emsp; &emsp; &emsp; TECHNICAL &emsp;&emsp; &emsp; REACT &emsp; &emsp; &emsp; IMPRESSIVE
-          &emsp; &emsp; &emsp; DYNAMIC WEBSITE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
+          &emsp; &emsp; &emsp; PORTFOLIO &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION
           &emsp; &emsp; &emsp; ANIMATION &emsp; &emsp; &emsp; JAVASCRIPT &emsp; &emsp; &emsp; COMPONENT &emsp; &emsp; &emsp;
           </p>
       </div>

@@ -6,6 +6,14 @@ $projectcolor4:#83ffb3;
 $projectcolor5:#83c7FF;
 $projectcolor6:#c783FF;
 
+.main_box {
+  animation: main_fade 1s ease 0s;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes main_fade {
+0%{transform: translateX(100%);}
+100%{transform: translateX(0%);}
+}
 
 .main_logo {
   // border:1px solid red;

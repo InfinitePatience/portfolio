@@ -278,7 +278,7 @@ const contactScroll = () => {
 
   return (
     <>
-    <div>
+    <div className='main_box'>
       <div className='main_logo'>
         <Link to="/"><img src={require("../images/portfolio_logo_white.png")} alt="" /></Link>
         <Menu introScroll={introScroll}/>
@@ -289,6 +289,7 @@ const contactScroll = () => {
           <div>
             <h1>BY SEUNG JU LEE.<br />WELCOME TO<br />MY SITE.</h1>
           </div>
+
         </div>
           <div className='main_contact_shortcuts' >
             
@@ -344,7 +345,7 @@ const contactScroll = () => {
                   <li ref={numberRef3}>03</li>
                   <li ref={titleRef3}>React App <br />Kakao Talk</li>
                   <li ref={subtitleRef3}>#react</li>
-                  <li ref={subtitleRef3_1}>#accessibility</li>
+                  <li ref={subtitleRef3_1}>#SPA</li>
                   <div className='border3-1'>
                     <div className='kakao_img'>
                       <img src={require('../images/kakao.png')} alt="kakao_image" ref={imagesRef3}/>
@@ -363,7 +364,7 @@ const contactScroll = () => {
                   <li ref={numberRef4}>04</li>
                   <li ref={titleRef4}>React App <br />Netflix</li>
                   <li ref={subtitleRef4}>#react</li>
-                  <li ref={subtitleRef4_1}>#accessibility</li>
+                  <li ref={subtitleRef4_1}>#responsive</li>
                   <div className='border4-1'>
                     <div className='netflix_img'>
                       <img src={require('../images/netflix.jpg')} alt="netflix_image" ref={imagesRef4}/>

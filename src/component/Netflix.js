@@ -61,7 +61,7 @@ function Netflix() {
       <div className='project_moveproject'></div>
       <div className='project_title'>
         <span>
-          <p>#react / #accessibility</p>
+          <p>#react / #responsive</p>
           <p>NETFLIX</p>
           <p>USED React.js SPA</p>
         </span>

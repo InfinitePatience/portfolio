@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Menu({color, introScroll}) {
   
- console.log('wwseaghwrsejhn',introScroll)
+ console.log('introScroll ->',introScroll)
   const [modal, setModal] = useState(false);
   const menuRef = useRef();
   const modalwindow = useRef();
@@ -64,7 +64,7 @@ function Menu({color, introScroll}) {
                   <li onClick={modaloutclick}><Link to={'/portfolio'}>Cover</Link></li>
                   {location.pathname === "/" ? (
                     <li onClick={handleClick}>Introduction</li>
-                  ) : (<li onClick={modaltoggle}><Link to={"/"}>Introduction</Link></li>)}
+                  ) : (<li onClick={modaltoggle}><Link to={"/"}>Home</Link></li>)}
                 </ul>
               </div>
               <div className='modal_top2'>

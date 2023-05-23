@@ -42,6 +42,7 @@ const [scroll, setScroll] = useState(0);
       behavior : 'smooth',
     },
   };
+  
 
   
   return (

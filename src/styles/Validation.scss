@@ -1,43 +1,64 @@
+$font:'Inter', sans-serif;
+
 .validation {
-    z-index:10;
+    z-index:2;
     width:90vw;
-    height:80%;
+    height:86%;
     position:absolute;
+    top:15%;
     right:-100%;
     animation: validani 1s ease 0s;
     animation-fill-mode: forwards;
     transition: right 1s ease 0s;
+    // border:1px solid red;
 
 @keyframes validani {
   from{right:-100%}
-  to{right:0%; background-color:#202020;}
+  to{right:-5%; background-color:#202020;}
 }
 @keyframes validani2 {
   from{right:0%}
   to{right:-100%;}
 }
+div {
+  display:flex;
+  margin:2vw 0vw 1vw 5vw;
+  font-family:$font;
+  div:first-child {
+    margin-right:16vw;
+  }
+  p {
+    color:#fff;
+    line-height:1.5;
+   strong {
+
+      font-size:1.2vw;
+    }
+  }
+}
 
     img {
-      width:42vw;
-      height:28vw;
+      width:30vw;
+      height:20vw;
+      border-radius:20px;
     }
     img:first-child{
       position:absolute;
-      top:0%;
+      top:50%;
       left:0%;
     }
     img:nth-of-type(2) {
       position:absolute;
-      top:-28%;
-      right:10%;
+      top:44%;
+      left:20%;
       box-shadow:-10px 5px 5px rgba(0,0,0,0.3);
     }
     img:last-of-type {
       position:absolute;
-      width:42vw;
-      height:15vw;
-      top:55%;
-      right:10%;
+      width:32vw;
+      height:20vw;
+      top:30%;
+      right:5%;
       box-shadow:-10px 5px 5px rgba(0,0,0,0.3);
     }
   }

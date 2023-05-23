@@ -6,10 +6,10 @@ function Contact() {
   return (
     <div className='contact_container'>
       <div className='contact_title'>
-        <p>Let's Make It Together</p>
+        <p>Let's Make It Together.</p>
       </div>
       <div className='contact_txt'>
-        <span>Thank You</span>
+        <span>Thank You.</span>
       </div>
 
       <div className='address'>
