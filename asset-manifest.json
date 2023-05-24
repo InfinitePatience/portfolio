@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8e543827.css",
-    "main.js": "/portfolio/static/js/main.5792b71f.js",
+    "main.css": "/portfolio/static/css/main.4c5c90c6.css",
+    "main.js": "/portfolio/static/js/main.793ad785.js",
     "static/media/davich_tablet.mp4": "/portfolio/static/media/davich_tablet.3911981b2fb3365d7228.mp4",
     "static/media/phone_group1.png": "/portfolio/static/media/phone_group1.cacbd5c69b36e99f2bea.png",
     "static/media/davich.mp4": "/portfolio/static/media/davich.117fada567ea632a69ed.mp4",
@@ -32,7 +32,7 @@
     "static/media/삼성전기 HTML 검사 결과.png": "/portfolio/static/media/삼성전기 HTML 검사 결과.66a337feff30cb60c4ec.png",
     "static/media/netflix.jpg": "/portfolio/static/media/netflix.1412b1dd973962f32a39.jpg",
     "static/media/samsung.jpg": "/portfolio/static/media/samsung.c1830459da6674735b45.jpg",
-    "static/media/picture.jpg": "/portfolio/static/media/picture.cb0726a6618cea888ffa.jpg",
+    "static/media/picture.jpg": "/portfolio/static/media/picture.d7a76182b77e8ddcb732.jpg",
     "static/media/cjone.jpg": "/portfolio/static/media/cjone.545b10c2f1069922fd87.jpg",
     "static/media/pure.PNG": "/portfolio/static/media/pure.66992112e96a60577286.PNG",
     "static/media/kakao.png": "/portfolio/static/media/kakao.f3c76effeae07c43f359.png",
@@ -42,11 +42,11 @@
     "static/media/다비치 Lighthouse 검사결과.PNG": "/portfolio/static/media/다비치 Lighthouse 검사결과.2322f5752137b0e40d2b.PNG",
     "static/media/CJONE Lighthouse 검사결과.PNG": "/portfolio/static/media/CJONE Lighthouse 검사결과.ec9c15869da6ec6b495d.PNG",
     "index.html": "/portfolio/index.html",
-    "main.8e543827.css.map": "/portfolio/static/css/main.8e543827.css.map",
-    "main.5792b71f.js.map": "/portfolio/static/js/main.5792b71f.js.map"
+    "main.4c5c90c6.css.map": "/portfolio/static/css/main.4c5c90c6.css.map",
+    "main.793ad785.js.map": "/portfolio/static/js/main.793ad785.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e543827.css",
-    "static/js/main.5792b71f.js"
+    "static/css/main.4c5c90c6.css",
+    "static/js/main.793ad785.js"
   ]
 }
