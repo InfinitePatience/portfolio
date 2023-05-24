@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4c5c90c6.css",
+    "main.css": "/portfolio/static/css/main.4e0275a9.css",
     "main.js": "/portfolio/static/js/main.793ad785.js",
     "static/media/davich_tablet.mp4": "/portfolio/static/media/davich_tablet.3911981b2fb3365d7228.mp4",
     "static/media/phone_group1.png": "/portfolio/static/media/phone_group1.cacbd5c69b36e99f2bea.png",
@@ -42,11 +42,11 @@
     "static/media/다비치 Lighthouse 검사결과.PNG": "/portfolio/static/media/다비치 Lighthouse 검사결과.2322f5752137b0e40d2b.PNG",
     "static/media/CJONE Lighthouse 검사결과.PNG": "/portfolio/static/media/CJONE Lighthouse 검사결과.ec9c15869da6ec6b495d.PNG",
     "index.html": "/portfolio/index.html",
-    "main.4c5c90c6.css.map": "/portfolio/static/css/main.4c5c90c6.css.map",
+    "main.4e0275a9.css.map": "/portfolio/static/css/main.4e0275a9.css.map",
     "main.793ad785.js.map": "/portfolio/static/js/main.793ad785.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c5c90c6.css",
+    "static/css/main.4e0275a9.css",
     "static/js/main.793ad785.js"
   ]
 }
