@@ -10,7 +10,14 @@ body {
 
 .project_container {
   position:relative;
-  border:1px solid red;
+  // border:1px solid red;
+  animation: project_fade 1s ease 0s;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  @keyframes project_fade {
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(0%);}
+  }
 
   .detail_davich {
     // border:1px solid blue;
@@ -332,11 +339,6 @@ body {
 @media screen and (max-width:1200px) { 
   .project_explanation {
     dl {
-      dt {
-        img {
-          
-        }
-      }
       dd {
         width:410px;
         font-size:18px;
@@ -470,7 +472,7 @@ body {
 // click botton(유효성검사 바로가기 버튼, git hub 버튼)
 .davich_content {
   position:relative;
-  left:5%;
+  left:0%;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -478,12 +480,13 @@ body {
   height:10vw;
   
   .davich_shortcuts_circle {
+    z-index:3;
     position:relative;
     width:9vw;
     height:9vw;
     background-color:#2b2b2b;
     border-radius:50%;
-    animation: radius 30.3s linear infinite;
+    animation:radius 30.3s linear infinite;
     transform-origin: 13px 25px;
     cursor: pointer;
 
@@ -518,6 +521,7 @@ body {
   }
 
   .davich_github {
+    z-index:3;
     position:absolute;
     left:15vw;
     width:9vw;

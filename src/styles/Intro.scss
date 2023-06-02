@@ -1,13 +1,13 @@
 .intro_container { 
   width:90vw;
-  margin:4.16vw auto;
+  margin:4.16vw auto 0vw;
   // border:1px solid red;
 
 
   .intro_title {
     color:#fff;
     p {
-      margin-bottom:4.16vw;
+      margin-bottom:8vw;
       font-size:7vw;
       font-family: 'Inter', sans-serif;
       font-weight:600;
@@ -44,7 +44,7 @@
       li:last-of-type {
         img {
         width:15vw;
-        height:15vw;
+        height:19vw;
         }
       }
     }

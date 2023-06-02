@@ -127,8 +127,10 @@ $font:'Inter', sans-serif;
     
     .samsung_video {
       position:relative;
-      margin:5% auto 7%;
-      width:90vw;
+      margin-top:2vw;
+      left:50%;
+      transform:translate(-50%);
+      width:82vw;
       // border:1px solid red;
     
       .samsung_mockup {
@@ -276,6 +278,7 @@ $font:'Inter', sans-serif;
       // border:1px solid red;
 
       .samsung_shortcuts_circle {
+        z-index:3;
         position:relative;
         width:9vw;
         height:9vw;
@@ -315,6 +318,7 @@ $font:'Inter', sans-serif;
       }
 
       .samsung_github {
+        z-index:3;
         position:absolute;
         left:15vw;
         width:9vw;

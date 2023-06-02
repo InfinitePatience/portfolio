@@ -10,6 +10,7 @@ import Kakao from './component/Kakao';
 import Pure from './component/Pure';
 import Menu from './component/Menu';
 import Cover from './component/Cover';
+import Introduction from './component/Introduction';
 
 
 function App() {

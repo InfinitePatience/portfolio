@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react'
 import '../styles/Menu.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 // import Navigation from './Navigation';
 
 
-function Menu({color}) {
-
+function Menu({color, introScroll}) {
+  
+ console.log('introScroll ->',introScroll)
   const [modal, setModal] = useState(false);
   const menuRef = useRef();
   const modalwindow = useRef();
@@ -13,18 +14,28 @@ function Menu({color}) {
   const modaltoggle = () => {
     setModal((prev) => !prev)
     menuRef.current.classList.toggle('on');
-    // document.body.style.overflow = 'hidden'
+    modal ? (
+      document.body.style.overflow = 'unset'
+    ) : (
+      document.body.style.overflow = 'hidden'
+    )
   };
   
   const modaloutclick = () => {
     menuRef.current.classList.remove('on');
-    document.body.style.overflow = 'auto'
+    document.body.style.overflow ='auto'
     setModal(false);
   };
 
-  const oncloseclick = () => {
+  const handleClick = () => {
+    introScroll();
+    setModal(false);
+    menuRef.current.classList.remove('on');
     document.body.style.overflow = 'auto'
   };
+
+  const location = useLocation();
+  console.log("sadasdasd",location)
 
   return (
     <div className='nav_container'>
@@ -33,7 +44,7 @@ function Menu({color}) {
         <div className='nav_btn' onClick={modaltoggle} ref={menuRef}>
           <div className='menu_txt'>
             <span className='menu'>menu</span>
-            <span className='close' onClick={modaloutclick}>close</span>
+            <span className='close'>close</span>
           </div>
           <div className='ham_btn'>
             <div className='ham_btn1'></div>
@@ -50,24 +61,26 @@ function Menu({color}) {
               <div className='modal_top1'>
                 <span style={{color}}>INTRO</span>
                 <ul>
-                  <li><Link to={'/portfolio'}>Cover</Link></li>
-                  <li>Introduction</li>
+                  <li onClick={modaloutclick}><Link to={'/portfolio'}>Cover</Link></li>
+                  {location.pathname === "/" ? (
+                    <li onClick={handleClick}>Introduction</li>
+                  ) : (<li onClick={modaltoggle}><Link to={"/"}>Home</Link></li>)}
                 </ul>
               </div>
               <div className='modal_top2'>
                 <span style={{color}}>PROJECT</span> 
                 <ul>
-                  <li><Link to={'/Project'}>Davich</Link></li>
-                  <li><Link to={'/Samsung'}>Samsung</Link></li>
-                  <li><Link to={'/Kakao'}>KakaoTalk</Link></li>
-                  <li><Link to={'/Netflix'}>Netflix</Link></li>
-                  <li><Link to={'/Cjone'}>Cjone</Link></li>
+                  <li onClick={modaloutclick}><Link to={'/Project'}>Davich</Link></li>
+                  <li onClick={modaloutclick}><Link to={'/Samsung'}>Samsung</Link></li>
+                  <li onClick={modaloutclick}><Link to={'/Kakao'}>KakaoTalk</Link></li>
+                  <li onClick={modaloutclick}><Link to={'/Netflix'}>Netflix</Link></li>
+                  <li onClick={modaloutclick}><Link to={'/Cjone'}>Cjone</Link></li>
                 </ul>
               </div>
               <div className='modal_top3'>
                 <span style={{color}}>OTHER</span>
                 <ul>
-                  <li><Link to={'/Pure'}>Pure CSS</Link></li>
+                  <li onClick={modaloutclick}><Link to={'/Pure'}>Pure CSS</Link></li>
                 </ul>
               </div>
               </div>

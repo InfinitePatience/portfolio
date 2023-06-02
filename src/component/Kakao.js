@@ -66,9 +66,9 @@ function Kakao() {
       <div className='project_moveproject'></div>
       <div className='project_title'>
         <span>
-          <p>#react / #accessibility</p>
+          <p>#react / #Single Page Application </p>
           <p>KAKAO TALK</p>
-          <p>ACCESSIBILITY WEB</p>
+          <p>USED React.js SPA</p>
         </span>
       </div>
     </div>

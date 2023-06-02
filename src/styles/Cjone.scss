@@ -245,6 +245,7 @@ $font:'Inter', sans-serif;
   height:10vw;
   
   .cjone_shortcuts_circle {
+    z-index:3;
     position:relative;
     width:9vw;
     height:9vw;
@@ -285,6 +286,7 @@ $font:'Inter', sans-serif;
   }
 
   .cjone_github {
+    z-index:3;
     position:absolute;
     left:15vw;
     width:9vw;
