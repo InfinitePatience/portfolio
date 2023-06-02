@@ -17,7 +17,7 @@ function App() {
   
 
   return (
-   <BrowserRouter>
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path='/portfolio' element={<Cover />}/>
       <Route path='/' element={<Main />}/>
