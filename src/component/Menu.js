@@ -61,10 +61,10 @@ function Menu({color, introScroll}) {
               <div className='modal_top1'>
                 <span style={{color}}>INTRO</span>
                 <ul>
-                  <li onClick={modaloutclick}><Link to={'/portfolio'}>Cover</Link></li>
-                  {location.pathname === "/" ? (
+                  <li onClick={modaloutclick}><Link to={'/'}>Cover</Link></li>
+                  {location.pathname === "/Main" ? (
                     <li onClick={handleClick}>Introduction</li>
-                  ) : (<li onClick={modaltoggle}><Link to={"/"}>Home</Link></li>)}
+                  ) : (<li onClick={modaltoggle}><Link to={"/Main"}>Home</Link></li>)}
                 </ul>
               </div>
               <div className='modal_top2'>

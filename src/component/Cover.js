@@ -7,9 +7,8 @@ function Cover() {
   const navigate = useNavigate();
   
   setTimeout(function() {
-    navigate('/');
+    navigate('/Main');
   }, [5000]);
-  
 
   return (
     <>
@@ -17,7 +16,7 @@ function Cover() {
       <div data-text="Seung Ju's PORTFOLIO" className='cover_intro'> 
         <span>Seung Ju's PORTFOLIO</span>
     </div>
-      <div className='cover_content' >
+      <div className='cover_content'>
         <p>STYLISH &emsp; &emsp; &emsp; VIDEO &emsp; &emsp; &emsp; BIG DATA &emsp; &emsp; &emsp;
         UI/UX &emsp; &emsp; &emsp; TECHNICAL &emsp;&emsp; &emsp; REACT &emsp; &emsp; &emsp; IMPRESSIVE
         &emsp; &emsp; &emsp; DYNAMIC WEBSITE &emsp; &emsp; &emsp; TRENDY &emsp; &emsp; &emsp; APPLICATION

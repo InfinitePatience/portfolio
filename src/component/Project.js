@@ -49,7 +49,7 @@ const [scroll, setScroll] = useState(0);
     <>
     <div className='project_container'>
     <div className='logo'>
-        <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Link to="/Main"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
     <Menu color="#FF8C8C"/>
     </div>
       <div className='detail_davich'>

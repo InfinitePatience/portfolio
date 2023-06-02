@@ -280,7 +280,7 @@ const contactScroll = () => {
     <>
     <div className='main_box'>
       <div className='main_logo'>
-        <Link to="/"><img src={require("../images/portfolio_logo_white.png")} alt="" /></Link>
+        <Link to="/Main"><img src={require("../images/portfolio_logo_white.png")} alt="" /></Link>
         <Menu introScroll={introScroll}/>
       </div>
       <div className='main_container'>

@@ -38,7 +38,7 @@ function Netflix() {
     <>
     <div className='project_container'>
     <div className='logo'>
-        <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Link to="/Main"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
         <Menu color="#83ffb3"/>
     </div>
     <div className='detail_netflix'>

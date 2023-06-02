@@ -12,7 +12,7 @@ function Pure() {
     <>
     <div className='project_container'>
     <div className='logo'>
-        <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Link to="/Main"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
         <Menu color="#c783FF"/>
     </div>
       <div className='project_animation pure'></div>

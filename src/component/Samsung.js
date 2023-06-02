@@ -46,7 +46,7 @@ function Samsung() {
     <>
     <div className='project_container'>
     <div className='logo'>
-        <Link to="/"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
+        <Link to="/Main"><img src={require("../images/portfolio_logo.png")} alt="" /></Link>
         <Menu color="#ffb183"/>
     </div>
     <div className='detail_samsung'> 
