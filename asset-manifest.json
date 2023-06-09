@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4e0275a9.css",
-    "main.js": "/portfolio/static/js/main.41a4c5a2.js",
+    "main.js": "/portfolio/static/js/main.2104aa0d.js",
     "static/media/davich_tablet.mp4": "/portfolio/static/media/davich_tablet.3911981b2fb3365d7228.mp4",
     "static/media/phone_group1.png": "/portfolio/static/media/phone_group1.cacbd5c69b36e99f2bea.png",
     "static/media/davich.mp4": "/portfolio/static/media/davich.117fada567ea632a69ed.mp4",
     "static/media/davich_mobile.mp4": "/portfolio/static/media/davich_mobile.212d4a91e3ea5f57f6b0.mp4",
     "static/media/samsung_main.mp4": "/portfolio/static/media/samsung_main.fd3f6cf338b2f76d7f64.mp4",
+    "static/media/netflix_tablet.mp4": "/portfolio/static/media/netflix_tablet.51212a3213c0d351d352.mp4",
     "static/media/emoji.mp4": "/portfolio/static/media/emoji.eeae87e1cbfd709b03ba.mp4",
     "static/media/purecss.mp4": "/portfolio/static/media/purecss.e309c539768b746a4ac9.mp4",
+    "static/media/netflix_pc.mp4": "/portfolio/static/media/netflix_pc.9e334140ee29ca510831.mp4",
     "static/media/cjone_mobile.mp4": "/portfolio/static/media/cjone_mobile.4f8e99228e7e342694a6.mp4",
+    "static/media/netflix_mobile.mp4": "/portfolio/static/media/netflix_mobile.5db985ad145d30d8ff13.mp4",
     "static/media/cjone_pc.mp4": "/portfolio/static/media/cjone_pc.d6102b5bb608a8dd5b10.mp4",
     "static/media/cjone_tablet.mp4": "/portfolio/static/media/cjone_tablet.db26d88bcef52c084fdd.mp4",
     "static/media/samsung_sub1.mp4": "/portfolio/static/media/samsung_sub1.5a5b2ffb3f25a9a99863.mp4",
@@ -43,10 +46,10 @@
     "static/media/CJONE Lighthouse 검사결과.PNG": "/portfolio/static/media/CJONE Lighthouse 검사결과.ec9c15869da6ec6b495d.PNG",
     "index.html": "/portfolio/index.html",
     "main.4e0275a9.css.map": "/portfolio/static/css/main.4e0275a9.css.map",
-    "main.41a4c5a2.js.map": "/portfolio/static/js/main.41a4c5a2.js.map"
+    "main.2104aa0d.js.map": "/portfolio/static/js/main.2104aa0d.js.map"
   },
   "entrypoints": [
     "static/css/main.4e0275a9.css",
-    "static/js/main.41a4c5a2.js"
+    "static/js/main.2104aa0d.js"
   ]
 }
