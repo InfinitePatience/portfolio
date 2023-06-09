@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Netflix.scss';
 import Menu from './Menu';
-// import netflix from '../video/netflix.mp4';
-// import netflix_tablet from '../video/netflix_tablet.mp4';
-// import netflix_mobile from '../video/netflix_mobile.mp4';
+import netflix_pc from '../video/netflix_pc.mp4';
+import netflix_tablet from '../video/netflix_tablet.mp4';
+import netflix_mobile from '../video/netflix_mobile.mp4';
 
 function Netflix() {
 
@@ -79,27 +79,27 @@ function Netflix() {
           <div className='netflix_pc'>
             <img src={require('../images/pc.png')} alt="pc_image"/>
             <div className='netflix_pc_screen'>
-             {/*  <video autoPlay loop muted preload>
-                <source src={netflix_main} type="video/mp4" />
-              </video> */}
+              <video autoPlay loop muted preload>
+                <source src={netflix_pc} type="video/mp4" />
+              </video>
             </div>
           </div>
 
           <div className='netflix_tablet'>
             <img src={require('../images/ipad.png')} alt="tablet_image"/>
             <div className='netflix_tablet_screen'>
-           {/*    <video autoPlay loop muted preload>
+              <video autoPlay loop muted preload>
                 <source src={netflix_tablet} type="video/mp4" />
-              </video> */}
+              </video>
             </div>
           </div>
 
           <div className='netflix_mobile'>
             <img src={require('../images/iphone14.png')} alt="mobile_image"/>
             <div className='netflix_mobile_screen'>
-            {/*   <video autoPlay loop muted preload>
+              <video autoPlay loop muted preload>
                 <source src={netflix_mobile} type="video/mp4" />
-              </video> */}
+              </video>
             </div>
           </div>
         </div> {/* // netflix_mockup */}
