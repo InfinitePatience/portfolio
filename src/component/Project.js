@@ -19,7 +19,7 @@ function Project() {
 // 스크롤시 div 움직임
 const [scroll, setScroll] = useState(0);
 
- useEffect(() => {
+  useEffect(() => {
   const handleScroll = () => {
     const scrollValue = document.querySelector('html').scrollTop;
     setScroll(scrollValue);

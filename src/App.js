@@ -17,7 +17,7 @@ function App() {
   
 
   return (
-   <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path='/' element={<Cover />}/>
       <Route path='/Main' element={<Main />}/>
@@ -29,7 +29,7 @@ function App() {
       <Route path='/Kakao' element={<Kakao />}/>
       <Route path='/Pure' element={<Pure />}/>
     </Routes>
-   </BrowserRouter>
+  </BrowserRouter>
   );
 }
 

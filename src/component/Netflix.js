@@ -11,7 +11,7 @@ function Netflix() {
   // 스크롤시 div 움직임
   const [scroll, setScroll] = useState(0);
 
- useEffect(() => {
+  useEffect(() => {
   const handleScroll = () => {
     const scrollValue = document.querySelector('html').scrollTop;
     setScroll(scrollValue);
@@ -69,7 +69,7 @@ function Netflix() {
     </div>
     <div className='netflix_video'>
       <div className='netflix_content'>
-        <Link target={'_blank'} to={''} className='netflix_github'>
+        <Link target={'_blank'} to={'https://infinitepatience.github.io/netflix_app_2023/'} className='netflix_github'>
           <p><img src={require("../images/github_img.png")} alt="github_image" />&nbsp;GitHub</p>
           <p>CLICK !</p>
         </Link>
