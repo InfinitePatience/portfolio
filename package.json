@@ -44,7 +44,7 @@
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2"
   },
-  "homepage": "https://InfinitePatience.github.io/portfolio/",
+  "homepage": "https://InfinitePatience.github.io/portfolio",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
